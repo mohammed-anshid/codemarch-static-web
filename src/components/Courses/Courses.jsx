@@ -21,7 +21,7 @@ function Courses() {
             <div class="w-[18rem] md:w-[14rem] lg:w-[95%] mb-7 sm:mx-auto lg:m-auto border-2 rounded-[16px] overflow-hidden bg-[#001e18] bg-opacity-10 bg-gradient-to-t from-[#001e18]  to-transparent">
               <img class="w-full" src={card.image} alt="Mountain" />
               <div class="lg:px-6">
-                <div class="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-3xl text-secondaryHover">
+                <div class="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
                   <p className="title">{card.text}</p>
                 </div>
                 <p class="description lg:text-base md:text-sm mt-5 text-center text-secondaryText">
@@ -58,7 +58,7 @@ function Courses() {
             </strong>
           </div>
           <div className="lg:px-6 md:mt-[1.4rem] lg:mt-[6rem]">
-            <div className="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-3xl text-secondaryHover">
+            <div className="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
               Bulding <br /> Your Brand
             </div>
             <p class="description lg:text-base md:text-sm mt-5 text-center text-secondaryText">
