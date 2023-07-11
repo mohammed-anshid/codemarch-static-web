@@ -1,0 +1,18 @@
+.text-decoration {
+    line-height:35px;
+}
+
+.gradient-underline {
+    background-image: linear-gradient(to right, #d6cca4c5,rgba(255, 255, 255,0));
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 1.5px;
+    width: fit-content;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.img-shadow 
+{
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 0%, transparent 100%);
+  position: relative;
+}

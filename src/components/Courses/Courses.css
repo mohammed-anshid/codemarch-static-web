@@ -1,0 +1,13 @@
+.avatar-image {
+    margin-top: -65px;
+    /* background:#0a3b2f; */
+    /* background: linear-gradient(to top, #001e18, transparent); */
+}
+
+.title {
+    font-family: 'Grotesque' 'sans-serif';
+    font-weight: 900;
+}
+.description{
+    line-height: 2rem;
+}
