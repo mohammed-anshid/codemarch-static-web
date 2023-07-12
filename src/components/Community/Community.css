@@ -16,3 +16,7 @@
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 0%, transparent 100%);
   position: relative;
 }
+
+/* .card {
+    box-shadow: -15px 0px 50px -5px #3D8361;
+  } */

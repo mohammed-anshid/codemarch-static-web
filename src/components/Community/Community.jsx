@@ -51,8 +51,8 @@ function Community() {
                             </div>
                         </div>
                     </div>
-                    <div className="community-media flex mx-28 relative">
-                        <img className="mx-auto img-shadow h-full" src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689064786/codemarch-discord_1_yxe83o.svg" alt="Community" />
+                    <div className="community-media card flex mx-28 relative">
+                        <img className="mx-auto card img-shadow h-full" src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689064786/codemarch-discord_1_yxe83o.svg" alt="Community" />
                         <img className="absolute h-[98%] top-2 left-[22rem]" src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689079507/twt_1_fjl5si.svg" alt="" />
                     </div>
                 </div>

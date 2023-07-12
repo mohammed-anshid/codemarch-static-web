@@ -18,13 +18,13 @@ function Courses() {
         {/* <!--Card 1--> */}
         {cards.map((card) => {
           return (
-            <div class="w-[18rem] md:w-[14rem] lg:w-[95%] mb-7 sm:mx-auto lg:m-auto border-2 rounded-[16px] overflow-hidden bg-[#001e18] bg-opacity-10 bg-gradient-to-t from-[#001e18]  to-transparent">
+            <div class="w-[18rem] md:w-[14rem] lg:w-[95%] mb-7 sm:mx-auto lg:m-auto border-2 rounded-[16px] overflow-hidden bg-[#002b23]  bg-gradient-to-t from-[#001e18]  to-transparent">
               <img class="w-full" src={card.image} alt="Mountain" />
               <div class="lg:px-6">
                 <div class="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
                   <p className="title">{card.text}</p>
                 </div>
-                <p class="description lg:text-base md:text-sm mt-5 text-center text-secondaryText">
+                <p class="description lg:text-lg font-light md:text-sm mt-5 lg:mx-3 text-center text-secondaryText">
                   {card.description}
                 </p>
               </div>
@@ -36,7 +36,7 @@ function Courses() {
             </div>
           );
         })}
-        <div class="w-[18rem] md:w-[14rem] lg:w-[95%] rounded-[16px] mb-7 sm:mx-auto lg:m-auto border-2  overflow-hidden bg-[#001e18] bg-opacity-10 bg-gradient-to-t from-[#001e18] to-transparent">
+        <div class="w-[18rem] md:w-[14rem] lg:w-[95%] rounded-[16px] mb-7 sm:mx-auto lg:m-auto border-2  overflow-hidden bg-[#001e18]  bg-gradient-to-t from-[#001e18] to-transparent">
           <div className="w-full border-b border-secondaryText bg-[#001e18] bg-opacity-80 ">
             <div className="py-4 px-10">
               <img className="w-[90%]" src={vector} alt="Arrow" />
@@ -45,7 +45,7 @@ function Courses() {
           <div className="avatar">
             <div className="w-28 h-28 mx-auto text-center">
               <img
-                className="avatar-image border border-secondaryText rounded-[50%] bg-[#0a3b2f] bg-gradient-to-t from-[#001e18] to-transparent"
+                className="avatar-image border border-secondaryText rounded-[50%]  bg-gradient-to-t from-[#001e18] to-[#0a3b2f]"
                 src={avatar}
                 alt="avatar"
               />
@@ -61,7 +61,7 @@ function Courses() {
             <div className="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
               Bulding <br /> Your Brand
             </div>
-            <p class="description lg:text-base md:text-sm mt-5 text-center text-secondaryText">
+            <p class="description lg:text-lg font-base md:text-sm mt-5 lg:mx-3 text-center text-secondaryText">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
