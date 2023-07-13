@@ -6,7 +6,7 @@ import footerButton from '../../assets/button-secondary-footer.svg';
 function Footer() {
   return (
     <div>
-        <footer className="bg-gradient-to-t from-[#001e18] to-transparent px-16">
+        <footer className="bg-gradient-to-t from-[#001e18] mt-56 lg:pb-16 to-transparent px-16">
             <div className="mx-auto w-full max-w-screen-xl py-6 lg:py-8">
                 <div className="md:flex md:justify-between md:gap-3">
                 <div className="mb-6 md:mb-0">
