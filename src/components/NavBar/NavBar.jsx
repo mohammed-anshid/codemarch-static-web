@@ -3,7 +3,8 @@ import React, { useState } from 'react';
 import './NavBar.css'
 import logo from '../../assets/cm-logo-1 1.svg';
 import Button from '../../assets/Property 1=Component 2.svg';
-import secondaryButton from '../../assets/button-secondary-small.svg'
+import secondaryButton from '../../assets/button-secondary-small.svg';
+import { FaBars } from 'react-icons/fa';
 
 function NavBar() {
   const [state, setState] = useState(false);
@@ -39,15 +40,17 @@ function NavBar() {
             // Main Navigation Bar
             <nav className=" fixed bg-transparent w-full z-20 top-0 left-0">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-10">
-                    <a href="https://flowbite.com/" className="flex items-center">
+                    <a href="" className="flex items-center">
                         <img src={logo} className="h-8 mr-3" alt="Flowbite Logo"/>
                     </a>
                     <div className="flex md:order-2">
-                        <button onClick={()=>console.log('hello')} type="button"  className='invisible md:visible'>
-                            <img className='w-36' src={Button} alt="" />
+                        <button className="hidden sm:hidden xs:hidden lg:inline-block md:inline-block">
+                            <img className="w-36" src={Button} alt="" />
                         </button>
-                        <button onClick={()=>setState(!state)} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-                        </button>
+                        <a onClick={() => setState(!state)} className="inline-flex items-center p-2 w-16 h-12 justify-center rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                            <FaBars/>
+                        </a>
+
                     </div>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" >
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border md:flex-row md:space-x-20 md:mt-0 md:border-0">
@@ -65,32 +68,38 @@ function NavBar() {
                 </div>
 
                 <div className={`${state ? 'block' : 'hidden'} sm:hidden`} id="mobile-menu">
-                    <div className="top-0 right-0 w-[170px] bg-blue-600 text-white fixed h-full">
+                    <div className="top-0 right-0 w-[190px] bg-[#082d26] text-white fixed h-full">
+                        <button onClick={()=>setState(!state)} type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                            </svg>
+                            <span class="sr-only">Close menu</span>
+                        </button>    
                     {/* Mobile navigation links */}
-                    <a
-                        href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
-                        Home
-                    </a>
-                    <a
-                        href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
-                        About
-                    </a>
-                    <a
-                        href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
-                        Services
-                    </a>
-                    <a
-                        href="#"
-                        className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                    >
-                        Contact
-                    </a>
+                        <div class="py-4 overflow-y-auto mt-4">
+                            <ul class="space-y-2 font-medium text-center">
+                                <li>
+                                    <a href="#" class="flex p-2 m-4 text-secondaryText hover:text-secondaryHover rounded-lg dark:text-secondaryHover hover:bg-[#001e18] dark:hover:bg-secondaryHover group">
+                                        <span class="ml-3 text-center">Skills</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex p-2 m-4 text-secondaryText hover:text-secondaryHover rounded-lg dark:text-secondaryHover hover:bg-[#001e18] dark:hover:bg-secondaryHover group">
+                                        <span class="ml-3 text-center">Newsletter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="flex p-2 m-4 text-secondaryText hover:text-secondaryHover rounded-lg dark:text-secondaryHover hover:bg-[#001e18] dark:hover:bg-secondaryHover group">
+                                        <span class="ml-3 text-center">Community</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <button className="">
+                                        <img className="w-[152px]" src={Button} alt="" />
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>

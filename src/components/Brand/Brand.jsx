@@ -40,7 +40,7 @@ function Brand() {
                 </div>
               </div> 
               <h2 className={`text-[#D7CEA5] ${index === currentCardIndex ? 'hoverText' : ''} text-center mt-[-70px] font-semibold text-[6.9rem]`}>{card.title}</h2>
-              </div> 
+            </div> 
           );
         })}
       </div>

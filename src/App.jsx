@@ -14,8 +14,7 @@ function App() {
       <Brand/>
       <Courses/>
       <NewsLetter/>
-      
-      <Community/>
+      {/* <Community/> */}
       <Footer/>
     </div>
   );
