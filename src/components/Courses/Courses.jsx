@@ -19,7 +19,7 @@ function Courses() {
         {cards.map((card) => {
           return (
             <div class="w-[18rem] md:w-[14rem] lg:w-[95%] mb-7 sm:mx-auto lg:m-auto border-2 rounded-[16px] overflow-hidden bg-[#002b23]  bg-gradient-to-t from-[#001e18]  to-transparent">
-              <img class="w-full" src={card.image} alt="Mountain" />
+              <img class="w-full" src={card.image} alt="Progress" />
               <div class="lg:px-6">
                 <div class="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
                   <p className="title">{card.text}</p>
