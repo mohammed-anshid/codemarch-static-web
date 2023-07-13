@@ -44,7 +44,7 @@ function Brand() {
           );
         })}
       </div>
-      <div className="content lg:mx-96 text-center">
+      <div className="content lg:mx-96 mx-7 text-center">
         <h3 className="lg:text-[1.4rem] leading-[40px] text-[#EDF1E4]">
           Master coding, build your brand & land your dream job. <br /> Launch your coding career with confidence
         </h3>

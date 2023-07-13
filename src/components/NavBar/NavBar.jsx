@@ -24,14 +24,14 @@ function NavBar() {
         
         { navbar ?(
             // Secondary Navigation Bar
-            <nav className="fixed z-20 top-10 w-100 min-w-100 left-1/2 transform -translate-x-1/2 rounded-[15px] border border-[#EAEDDC] border-opacity-40 bg-[#002B23] shadow-md">
-                <div className="flex navbar items-center gap-16 justify-between lg:pl-20 sm:pl-40 lg:pr-2 py-1">
-                    <div className="flex items-center md:space-x-16 sm:space-x-16">
-                        <a href="#" className="text-secondaryText hover:text-secondaryHover">Skills</a>
-                        <a href="#" className="text-secondaryText hover:text-secondaryHover">Newsletter</a>
-                        <a href="#" className="text-secondaryText hover:text-secondaryHover">Community</a>
+            <nav className="fixed z-20 top-10 w-100 py-[.3rem]  left-1/2 transform -translate-x-1/2 rounded-[15px] border border-[#EAEDDC] border-opacity-40 bg-[#002B23] shadow-md">
+                <div className="flex navbar items-center gap-16 justify-between  px-11 lg:pl-20 lg:pr-2 py-1">
+                    <div className="items-center md:space-x-11 sm:gap-11">
+                        <a href="#" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover">Skills</a>
+                        <a href="#" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover">Newsletter</a>
+                        <a href="#" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover">Community</a>
                     </div>  
-                    <button className="md:space-x-16">
+                    <button className="md:space-x-16 hidden sm:hidden xs:hidden lg:inline-block md:inline-block">
                         <img className="h-10" src={secondaryButton} alt="" />
                     </button>
                 </div>
@@ -39,7 +39,7 @@ function NavBar() {
             ):(
             // Main Navigation Bar
             <nav className=" fixed bg-transparent w-full z-20 top-0 left-0">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-10">
+                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-[1.5rem]">
                     <a href="" className="flex items-center">
                         <img src={logo} className="h-8 mr-3" alt="Flowbite Logo"/>
                     </a>
@@ -47,7 +47,7 @@ function NavBar() {
                         <button className="hidden sm:hidden xs:hidden lg:inline-block md:inline-block">
                             <img className="w-36" src={Button} alt="" />
                         </button>
-                        <a onClick={() => setState(!state)} className="inline-flex items-center p-2 w-16 h-12 justify-center rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                        <a onClick={() => setState(!state)} className="inline-flex items-center p-2 w-16 h-12 justify-center text-[1.7rem] text-secondaryText rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-secondaryText dark:text-secondaryText dark:hover:bg-secondaryText dark:focus:ring-secondaryText" aria-controls="navbar-sticky" aria-expanded="false">
                             <FaBars/>
                         </a>
 

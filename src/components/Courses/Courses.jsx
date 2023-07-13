@@ -13,18 +13,18 @@ function Courses() {
     { text:'Programming Languages', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',image:`${image2}`}
   ];
   return (
-    <div className="lg:px-[8rem] md:px-16 px-16 mx-auto pt-32">
-      <div class=" mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-6">
+    <div className="lg:px-[8rem] md:px-16 mx-auto pt-32">
+      <div class="mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-6">
         {/* <!--Card 1--> */}
         {cards.map((card) => {
           return (
-            <div class="w-[18rem] md:w-[14rem] lg:w-[95%] mb-7 sm:mx-auto lg:m-auto border-2 rounded-[16px] overflow-hidden bg-[#002b23]  bg-gradient-to-t from-[#001e18]  to-transparent">
+            <div class="mx-auto w-[18rem] md:w-[14rem] lg:w-[95%] mb-7 sm:mx-auto lg:m-auto border-2 rounded-[16px] overflow-hidden bg-[#002b23]  bg-gradient-to-t from-[#001e18]  to-transparent">
               <img class="w-full" src={card.image} alt="Progress" />
               <div class="lg:px-6">
-                <div class="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
+                <div class="title font-bold mb-2 mx-3 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
                   <p className="title">{card.text}</p>
                 </div>
-                <p class="description lg:text-lg font-light md:text-sm mt-5 lg:mx-3 text-center text-secondaryText">
+                <p class="description lg:text-lg font-light md:text-sm mt-5 lg:mx-3 mx-2 text-center text-secondaryText">
                   {card.description}
                 </p>
               </div>
@@ -36,7 +36,7 @@ function Courses() {
             </div>
           );
         })}
-        <div class="w-[18rem] md:w-[14rem] lg:w-[95%] rounded-[16px] mb-7 sm:mx-auto lg:m-auto border-2  overflow-hidden bg-[#001e18]  bg-gradient-to-t from-[#001e18] to-transparent">
+        <div class="mx-auto w-[18rem] md:w-[14rem] lg:w-[95%] rounded-[16px] mb-7 sm:mx-auto lg:m-auto border-2  overflow-hidden bg-[#001e18]  bg-gradient-to-t from-[#001e18] to-transparent">
           <div className="w-full border-b border-secondaryText bg-[#001e18] bg-opacity-80 ">
             <div className="py-4 px-10">
               <img className="w-[90%]" src={vector} alt="Arrow" />
@@ -54,14 +54,14 @@ function Courses() {
           <div className="flex mt-[2rem]">
             <strong className="text-secondaryHover flex lg:text-3xl mx-auto">
               You
-              <img className="h-7 m-1 ml-2" src={approve} alt="" />{" "}
+              <img className="h-5 lg:h-7  lg:m-1 ml-2" src={approve} alt="" />{" "}
             </strong>
           </div>
           <div className="lg:px-6 md:mt-[1.4rem] lg:mt-[6rem]">
             <div className="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
               Bulding <br /> Your Brand
             </div>
-            <p class="description lg:text-lg font-base md:text-sm mt-5 lg:mx-3 text-center text-secondaryText">
+            <p class="description lg:text-lg font-light md:text-sm mt-5 mx-2 lg:mx-3 text-center text-secondaryText">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
