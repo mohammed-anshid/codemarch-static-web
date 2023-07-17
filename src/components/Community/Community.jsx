@@ -15,19 +15,23 @@ function Community() {
                     </div>    
                     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 p-10 md:pt-15 lg:pt-16">
                         <div class="block p-4">
-                            <div className='md:mx-10 lg:mx-16'>
-                                <span class="inline-block rounded-lg ">
-                                    <div class="inline-flex align-middle justify-center items-center select-none text-white">
-                                        <img className='h-20' src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689059826/Discord_xn9tuy.svg" alt="Discord-logo" />
+                            <div className='vertical'>
+                                <div className='md:mx-10 lg:mx-16'>
+                                    <span class="inline-block rounded-lg ">
+                                        <div class="inline-flex align-middle justify-center items-center select-none text-white">
+                                            <img className='h-20' src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689059826/Discord_xn9tuy.svg" alt="Discord-logo" />
+                                        </div>
+                                    </span>
+                                    <h2 class="mt-4 md:mt-7 head text-3xl md:text-[3rem] lg:text-5xl leading-[35px] md:leading-[50px] text-secondaryHover">codemarch <br />community</h2>
+                                    <p class="md:leading-7 lg:leading-10 mt-2 md:mt-5 lg:mt-5 lg:mx-[3.9px] sm:mt-1 block text-base  text-secondaryText">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    </p>
+                                    <p className='gradient-underline mt-2 md:mt-6 lg:mt-6 font-bold leading-[55px] text-secondaryHover text-3xl md:text-4xl lg:text-4xl'>1,000+ Members</p>
+                                    <div className='mt-8'>
+                                        <a href="https://discord.gg/7g9WddcyKt" className='cursor-pointer'>
+                                            <img className='h-10 md:h-11 lg:h-14' src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689059414/Discord-button_rkohcu.svg" alt="" />
+                                        </a>
                                     </div>
-                                </span>
-                                <h2 class="mt-4 md:mt-7 head text-3xl md:text-[3rem] lg:text-5xl leading-[35px] md:leading-[50px] text-secondaryHover">codemarch <br />community</h2>
-                                <p class="md:leading-7 lg:leading-10 mt-2 md:mt-5 lg:mt-5 lg:mx-[3.9px] sm:mt-1 block text-base  text-secondaryText">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                </p>
-                                <p className='gradient-underline mt-2 md:mt-6 lg:mt-6 font-bold leading-[55px] text-secondaryHover text-3xl md:text-4xl lg:text-4xl'>1,000+ Members</p>
-                                <div className='mt-8'>
-                                    <img className='h-10 md:h-11 lg:h-14' src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689059414/Discord-button_rkohcu.svg" alt="" />
                                 </div>
                             </div>
                         </div>

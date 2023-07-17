@@ -19,7 +19,9 @@ function NewsLetter() {
                 and transformed!
               </p>
               <button className="mt-5 md:mt-9">
-                <img className="h-9 md:h-12 lg:h-14" src={Button} alt="Button"/>
+                <a href="https://the-dev-chronicle.beehiiv.com/">
+                  <img className="h-9 md:h-12 lg:h-14" src={Button} alt="Button"/>
+                </a>
               </button>
             </div>
             <div className="newsImg lg:mx-31 mt-7">

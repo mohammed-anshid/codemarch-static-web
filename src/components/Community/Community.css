@@ -17,6 +17,13 @@
   position: relative;
 }
 
+@media (max-width: 1536px) and (min-width: 768px)  {
+  .vertical {
+    border-right: 2.2px solid;
+    border-image:linear-gradient(#d3caa2bc, transparent) 30;
+  }
+}
+
 /* .card {
     box-shadow: -15px 0px 50px -5px #3D8361;
   } */

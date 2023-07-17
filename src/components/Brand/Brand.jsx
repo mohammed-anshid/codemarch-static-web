@@ -22,19 +22,19 @@ function Brand() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="justify-items-center justify-center w-fit mx-auto">
+    <section className="justify-items-center justify-center w-fit mx-auto lg:pt-7">
       <div className="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-11 mb-5 pt-40">
         {cards?.map((card,index) => {
           return (
             
-            <div className={`flex flex-col items-center relative`}>
-              <div className="w-80 rounded-[20px] bg-gradient-to-b from-[#5c6e66] via-[#2e4942] to-transparent p-[3.3px]">
+            <div className="flex flex-col items-center relative">
+              <div className="w-80 rounded-[20px] bg-gradient-to-b from-[#5c6e66] via-[#2e4942] to-transparent p-[3.3px] shadows">
                 <div className="h-full rounded-[18px] items-center justify-center bg-gradient-to-b from-[#001e18] via-[#031915] to-transparent">
                   <div className="h-[19rem] w-72 mx-auto flex justify-center items-center relative">
                     <img
                       src={index === currentCardIndex ? card.img2 : card.img}
                       alt="Product"
-                      className="image-svg h-52 w-52 mx-auto justify-center rounded-t-xl"
+                      className="image-svg h-52 w-52 mx-auto justify-center rounded-t-xl imgs"
                     />
                   </div>
                 </div>

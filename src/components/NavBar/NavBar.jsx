@@ -38,7 +38,7 @@ function NavBar() {
             </nav>
             ):(
             // Main Navigation Bar
-            <nav className=" fixed bg-transparent w-full z-20 top-0 left-0">
+            <nav className="fixed bg-transparent w-full z-20 top-0 left-0 lg:pt-10">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-[1.5rem]">
                     <a href="" className="flex items-center">
                         <img src={logo} className="h-8 mr-3" alt="Flowbite Logo"/>
