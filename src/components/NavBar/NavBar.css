@@ -1,5 +1,7 @@
-.navbar {
-    overflow-x: auto;
-    overflow-y: hidden;
-    white-space: nowrap;
+/* .navbar {
+    box-shadow:;
+} */
+
+.btn {
+    font-family: 'DM Sans', sans-serif;
 }

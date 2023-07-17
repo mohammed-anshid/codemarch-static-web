@@ -13,13 +13,13 @@ function Courses() {
     { text:'Programming Languages', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',image:`${image2}`}
   ];
   return (
-    <div className="lg:px-[8rem] md:px-16 mx-auto pt-32">
+    <div className="px-[3rem] md:px-[4rem] lg:px-[8.5rem] mx-auto mb-11 pt-28">
       <div class="mx-auto grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:gap-6">
         {/* <!--Card 1--> */}
         {cards.map((card) => {
           return (
-            <div class="w-[18rem] md:w-[14rem] lg:w-[95%] lg:m-auto rounded-[16px] bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.6px]">
-              <div class="mx-auto  mb-7 sm:mx-auto lg:m-auto rounded-[16px] overflow-hidden bg-[#002b23]  bg-gradient-to-t from-[#001e18]  to-transparent">
+            <div class="w-[18rem] md:w-[14rem] mt-5 lg:w-[95%] lg:m-auto mx-auto rounded-[16px] bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.6px]">
+              <div class="mx-auto mb-7 lg:m-auto h-full rounded-[16px] overflow-hidden bg-[#002b23]  bg-gradient-to-t from-[#001e18]  to-transparent">
                   <img class="w-full" src={card.image} alt="Progress" />
                 <div class="lg:px-6">
                   <div class="title font-bold mb-2 mx-3 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
@@ -29,7 +29,7 @@ function Courses() {
                     {card.description}
                   </p>
                 </div>
-                <div class="px-6 pt-6 pb-3 text-center mb-5">
+                <div class="px-6 pt-6 pb-3 mb-3 text-center">
                   <button>
                     <img className="h-12" src={button} alt="" />
                   </button>
@@ -38,8 +38,8 @@ function Courses() {
             </div>
           );
         })}
-        <div class="w-[18rem] md:w-[14rem] lg:w-[95%] lg:m-auto rounded-[16px] bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.6px]">
-          <div class="mx-auto mb-7 sm:mx-auto lg:m-auto rounded-[16px] overflow-hidden bg-[#001e18]  bg-gradient-to-t from-[#001e18] to-transparent">
+        <div class="w-[18rem] md:w-[14rem] mt-5 lg:w-[95%] lg:m-auto mx-auto rounded-[16px] bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.6px]">
+          <div class="mx-auto mb-7 h-full lg:m-auto rounded-[16px] overflow-hidden bg-[#001e18]  bg-gradient-to-t from-[#001e18] to-transparent">
             <div className="w-full border-b border-secondaryText bg-[#001e18] bg-opacity-80 ">
               <div className="py-4 px-10">
                 <img className="w-[90%]" src={vector} alt="Arrow" />
@@ -69,7 +69,7 @@ function Courses() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div class="px-6 pt-6 pb-3 text-center mb-5">
+            <div class="px-6 pt-6 pb-3 mb-3 text-center">
               <button>
                 <img className="h-12" src={button} alt="" />
               </button>
