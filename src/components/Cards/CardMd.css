@@ -1,0 +1,22 @@
+/* .slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; 
+  }
+
+.slide-card {
+
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+ 
+.slide-card.active {
+   opacity: 1;
+}
+  
+
+.slide-card.inactive {
+   opacity: 0;
+} */

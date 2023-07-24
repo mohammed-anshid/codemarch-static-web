@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import './NavBar.css'
 import logo from '../../assets/cm-logo-1 1.svg';
 import Button from '../../assets/Property 1=Component 2.svg';
-import {FaArrowRight} from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 
 function NavBar() {
 //   const [state, setState] = useState(false);

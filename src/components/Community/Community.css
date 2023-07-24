@@ -11,10 +11,14 @@
     font-family: 'Darker Grotesque', sans-serif;
 }
 
-.img-shadow 
-{
+.img-shadow {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 0%, transparent 100%);
   position: relative;
+}
+
+.secondaryButton {
+  color: #01221C;
+  font-size: 12.8px;
 }
 
 @media (max-width: 1536px) and (min-width: 768px)  {
@@ -24,6 +28,10 @@
   }
 }
 
-/* .card {
-    box-shadow: -15px 0px 50px -5px #3D8361;
-  } */
+
+.gradient-hr {
+  background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(214, 204, 164, 0.542) 52%, rgba(0,212,255,0) 100%);
+  height: 1px;
+  border: none;
+}
+
