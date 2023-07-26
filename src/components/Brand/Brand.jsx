@@ -35,18 +35,18 @@ function Brand() {
             {cards?.map((card,index) => {
               return (
                 <div className="flex flex-col items-center relative">
-                  <div className={`w-[17rem] md:w-[17rem] lg:w-[20rem] rounded-[20px] ${index===currentCardIndex ? 'bg-gradient-to-b from-secondaryHover via-[#edf1e467] to-transparent' :'bg-gradient-to-b from-[#5c6e66] via-[#2e4942] to-transparent'}   p-[3.3px] shadows`}>
-                    <div className="h-full rounded-[18px] items-center justify-center bg-gradient-to-b from-[#001e18] via-[#031915] to-transparent">
+                  <div className={`w-[17rem] md:w-[17rem] lg:w-[19rem] rounded-[25px] ${index===currentCardIndex ? 'bg-gradient-to-b from-secondaryHover via-[#edf1e467] to-transparent' :'bg-gradient-to-b from-[#5c6e66] via-[#2e4942] to-transparent'}   p-[3.3px] shadows`}>
+                    <div className="h-full rounded-[23px] items-center justify-center bg-gradient-to-b from-[#001e18] via-[#031915] to-transparent">
                       <div className="h-[10rem] lg:h-[19rem] lg:w-72 mx-auto flex justify-center items-center relative">
                         <img
                           src={index === currentCardIndex ? card.img2 : card.img}
                           alt="Product"
-                          className={`image-svg h-24 md:h-48 md:w-48 lg:h-52 lg:w-52 mx-auto justify-center rounded-t-xl imgs ${index === currentCardIndex ? 'fade-in-element' :''} `}
+                          className={`image-svg h-24 md:h-48 md:w-48 lg:h-48 lg:w-48 mx-auto justify-center rounded-t-xl imgs ${index === currentCardIndex ? 'fade-in-element' :''} `}
                         />
                       </div>
                     </div>
                   </div> 
-                  <h2 className={`text-[#D7CEA5] ${index === currentCardIndex ? 'hoverText' : ''} text-center mt-[-70px] font-semibold md:text-[5.9rem] lg:text-[6.9rem]`}>{card.title}</h2>
+                  <h2 className={`text-[#D7CEA5] ${index === currentCardIndex ? 'hoverText bg-gradient-to-b from-brandText to-brandHover bg-clip-text text-transparent' : ''} text text-center mt-[-100px]  md:text-[5.9rem] lg:text-[8.7rem]`}>{card.title}</h2>
                 </div> 
               );
             })}
