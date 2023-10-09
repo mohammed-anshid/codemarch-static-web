@@ -1,21 +1,25 @@
-import React from 'react';
+import React,{ lazy, Suspense } from 'react';
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
-import Courses from './components/Courses/Courses';
-import NewsLetter from './components/NewsLetter/NewsLetter';
-import Community from './components/Community/Community';
-import Brand from './components/Brand/Brand';
+import Loader from './components/Loader/Loader';
+
+const NavBar = lazy(()=> import('./components/NavBar/NavBar'));
+const Footer = lazy(()=> import('./components/Footer/Footer'));
+const Courses = lazy(()=> import('./components/Courses/Courses'));
+const NewsLetter = lazy(()=> import('./components/NewsLetter/NewsLetter'));
+const Community = lazy(()=> import('./components/Community/Community'));
+const Brand = lazy(()=> import('./components/Brand/Brand'));
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <Brand/>
-      <Courses/>
-      <NewsLetter/>
-      <Community/>
-      <Footer/>
+      <Suspense fallback={<Loader/>}>
+        <NavBar/>
+        <Brand/>
+        <Courses/>
+        <NewsLetter/>
+        <Community/>
+        <Footer/>
+      </Suspense>
     </div>
   );
 }
