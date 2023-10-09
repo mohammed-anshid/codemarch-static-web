@@ -1,10 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Button from "../../assets/images/subscribe-button.svg";
 import reportImg from "../../assets/images/letter-img.svg";
+import ScrollReveal from 'scrollreveal';
 
 function NewsLetter() {
+  useEffect(() => {
+    // Initialize ScrollReveal with your desired configuration
+    ScrollReveal().reveal('.container', {
+      delay: 100,
+      distance: '11px',
+      duration: 1000,
+      easing: 'ease-in',
+      origin: 'top',
+    });
+
+    // Clean up ScrollReveal when the component unmounts
+    return () => {
+      ScrollReveal().destroy();
+    };
+  }, []);
+  
   return (
-    <div class="px-[1.5rem] md:px-[4rem] lg:px-[8.5rem] mx-auto pt-10 md:pt-28">
+    <div class="container px-[1.5rem] md:px-[4rem] lg:px-[8.5rem] mx-auto pt-10 md:pt-28">
       <div class="w-full rounded-[16px] bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.5px]">
         <div class="backGround flex h-full w-full rounded-[16px] items-center justify-center  bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#205340] via-[#174233]  to-[#002b23]">
           <div className="NewsLetter">

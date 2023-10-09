@@ -1,14 +1,31 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Community.css';
+import ScrollReveal from 'scrollreveal';
 import { FaArrowRight } from 'react-icons/fa';
 import { PiDotOutlineFill } from 'react-icons/pi'
 
 function Community() {
+
+    useEffect(() => {
+        // Initialize ScrollReveal with your desired configuration
+        ScrollReveal().reveal('.container', {
+          delay: 100,
+          distance: '11px',
+          duration: 1000,
+          easing: 'ease-in',
+          origin: 'top',
+        });
+    
+        // Clean up ScrollReveal when the component unmounts
+        return () => {
+          ScrollReveal().destroy();
+        };
+    }, []); 
   return (
-    <div class="px-[1.5rem] md:px-[4rem] lg:px-[8.5rem]  mx-auto mb-11 pt-16 md:pt-28">
-        <div class="w-full rounded-[16px] bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.5px]">
-            <div class="backGround flex h-full w-full rounded-[16px] items-center justify-center bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#3D8361] via-[#002b23] to-[#002b23]">
+    <div className="container px-[1.5rem] md:px-[4rem] lg:px-[8.5rem]  mx-auto mb-11 pt-16 md:pt-28">
+        <div className="w-full rounded-[16px] bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.5px]">
+            <div className="backGround flex h-full w-full rounded-[16px] items-center justify-center bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-[#3D8361] via-[#002b23] to-[#002b23]">
                 <div className="community">
                     <div className="textContent mt-5 md:mt-9 lg:mt-14 text-center lg:mx-36">
                         <h1 className='head text-4xl md:text-5xl lg:text-6xl text-secondaryHover'>

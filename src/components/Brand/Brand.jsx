@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React,{ useState,useEffect } from "react";
+import ScrollReveal from 'scrollreveal';
 import './Brand.css';
 import button from "../../assets/images/property-button.svg";
 import vector1 from "../../assets/Banner/vector-1.svg"
@@ -9,6 +10,7 @@ import vector3 from "../../assets/Banner/vector-3.svg"
 import { useMediaQuery } from 'react-responsive';
 import { FaArrowRight } from 'react-icons/fa';
 import CardMd from "../Cards/CardMd";
+
 
 function Brand() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
@@ -20,6 +22,22 @@ function Brand() {
     {title:'Crack',img:'https://res.cloudinary.com/dbb0ncoht/image/upload/v1689154320/Group_1_e6fxxq.svg', img2:vector3}
   ];
   useEffect(() => {
+    // Initialize ScrollReveal with your desired configuration
+    ScrollReveal().reveal('.container', {
+      delay: 100,
+      distance: '11px',
+      duration: 1000,
+      easing: 'ease-in',
+      origin: 'top',
+    });
+
+    // Clean up ScrollReveal when the component unmounts
+    return () => {
+      ScrollReveal().destroy();
+    };
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setCurrentCardIndex((prevIndex) => (prevIndex + 1) % 3)
     }, 3000);
@@ -27,7 +45,7 @@ function Brand() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="px-[1rem] md:px-[2rem] justify-items-center justify-center mx-auto lg:pt-7">
+    <section className="container px-[1rem] md:px-[2rem] justify-items-center justify-center mx-auto lg:pt-7">
       <div className="cards">
         {
           isMdScreenOrLarger ? 

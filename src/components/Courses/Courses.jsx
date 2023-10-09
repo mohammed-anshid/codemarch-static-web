@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Courses.css";
+import ScrollReveal from 'scrollreveal';
 import image1 from "../../assets/images/template-group-1.svg"; //Image assests imports
 import image2 from "../../assets/images/template-group-2.svg";
 import button from "../../assets/images/property-button.svg";
@@ -8,12 +9,27 @@ import vector from "../../assets/images/Vector-Arrow.svg";
 import approve from "../../assets/images/Vector (1).png";
 
 function Courses() {
+  useEffect(() => {
+    // Initialize ScrollReveal with your desired configuration
+    ScrollReveal().reveal('.container', {
+      delay: 100,
+      distance: '11px',
+      duration: 1000,
+      easing: 'ease-in',
+      origin: 'top',
+    });
+
+    // Clean up ScrollReveal when the component unmounts
+    return () => {
+      ScrollReveal().destroy();
+    };
+  }, []);
   const cards = [
     { text:'Frontend Development', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',image:`${image1}`},
     { text:'Programming Languages', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',image:`${image2}`}
   ];
   return (
-    <div className="px-[2.1rem] md:px-[4rem] lg:px-[8.5rem] mx-auto mb-11 pt-28">
+    <div className="container px-[2.1rem] md:px-[4rem] lg:px-[8.5rem] mx-auto mb-11 pt-28">
       <div className="overflow-x-auto">
         <div class="mx-auto grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-80 md:gap-36 lg:gap-6">
           {/* <!--Card 1--> */}
