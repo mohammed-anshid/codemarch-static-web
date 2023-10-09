@@ -6,3 +6,12 @@
   background-position: 50px;
   min-height: 100vh;
 }
+
+/* @media(min-width:768px){
+  .app {
+    background-image: radial-gradient(rgba(30, 82, 57, .5) 3.3px, transparent 3.3px);
+    background-size: 10px 10px;
+    background-position: 10px;
+    min-height: 100vh;
+  }
+} */

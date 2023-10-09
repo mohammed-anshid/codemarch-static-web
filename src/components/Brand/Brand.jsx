@@ -7,6 +7,7 @@ import vector1 from "../../assets/Banner/vector-1.svg"
 import vector2 from "../../assets/Banner/vector-2.svg"
 import vector3 from "../../assets/Banner/vector-3.svg"
 import { useMediaQuery } from 'react-responsive';
+import { FaArrowRight } from 'react-icons/fa';
 import CardMd from "../Cards/CardMd";
 
 function Brand() {
@@ -26,8 +27,8 @@ function Brand() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section className="px-[1rem] md:px-[2rem] justify-items-center justify-center  mx-auto lg:pt-7">
-      <div className="overflow-x-auto">
+    <section className="px-[1rem] md:px-[2rem] justify-items-center justify-center mx-auto lg:pt-7">
+      <div className="cards">
         {
           isMdScreenOrLarger ? 
           (
@@ -58,12 +59,12 @@ function Brand() {
         }
 
       </div>
-      <div className="content lg:mx-96 mx-7 text-center">
-        <h3 className="lg:text-[1.4rem] leading-[40px] text-[#EDF1E4]">
+      <div className="content mx-3 lg:mx-[22rem] md:mx-7  text-center">
+        <h3 className="text-[12px] md:text-[1rem] lg:text-[1.4rem] leading-7 md:leading-[40px] text-[#EDF1E4]">
           Master coding, build your brand & land your dream job. <br /> Launch your coding career with confidence
         </h3>
-        <button className="w-56 mt-14">
-          <img src={button} alt="" />
+        <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-full md:w-56 h-10 md:h-14 justify-center mt-6 md:mt-9 lg:mt-12 rounded-[9px]">
+          Get Started<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
         </button>
       </div>
     </section>
