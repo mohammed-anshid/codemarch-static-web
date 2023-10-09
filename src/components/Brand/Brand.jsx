@@ -50,7 +50,7 @@ function Brand() {
         {
           isMdScreenOrLarger ? 
           (
-            <div className="w-fit mx-auto grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 md:justify-items-center md:justify-center gap-x-72 md:gap-x-11 mb-5 pt-28 overflow-y-hidden overflow-x-auto">
+            <div className="w-fit mx-auto grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 md:justify-items-center md:justify-center gap-x-72 md:gap-x-11 mb-5 pt-24 overflow-y-hidden overflow-x-auto">
             {cards?.map((card,index) => {
               return (
                 <div className="flex flex-col items-center relative">
@@ -77,12 +77,12 @@ function Brand() {
         }
 
       </div>
-      <div className="content mx-3 lg:mx-[22rem] md:mx-7 pb-8 text-center">
+      <div className="content mx-3 lg:mx-[22rem] md:mx-7  text-center">
         <h3 className="text-[12px] md:text-[1rem] lg:text-[1.4rem] leading-7 md:leading-[40px] text-[#EDF1E4]">
           Master coding, build your brand & land your dream job. <br /> Launch your coding career with confidence
         </h3>
         <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-full md:w-56 h-10 md:h-14 justify-center mt-6 md:mt-9 lg:mt-12 rounded-[9px]">
-          coming soon<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
+          Coming soon<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
         </button>
       </div>
     </section>
