@@ -82,7 +82,7 @@ function Brand() {
           Master coding, build your brand & land your dream job. <br /> Launch your coding career with confidence
         </h3>
         <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-full md:w-56 h-10 md:h-14 justify-center mt-6 md:mt-9 lg:mt-12 rounded-[9px]">
-          Get Started<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
+          Soon<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
         </button>
       </div>
     </section>
