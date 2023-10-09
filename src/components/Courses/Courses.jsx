@@ -16,7 +16,7 @@ function Courses() {
       distance: '11px',
       duration: 1000,
       easing: 'ease-in',
-      origin: 'top',
+      origin: 'bottom',
     });
 
     // Clean up ScrollReveal when the component unmounts
