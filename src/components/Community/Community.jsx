@@ -46,7 +46,7 @@ function Community() {
                                         <div className="col-span-7 sm:col-span-7 md:col-span-10 lg:col-span-10">
                                             <h2 className="lg:mt-4 md:mt-7 head text-[1.3rem] md:text-3xl md:text-[3rem] lg:text-5xl leading-[35px] md:leading-[50px] text-secondaryHover">codemarch community</h2>
                                             <p className="leading-7 md:leading-7 lg:leading-10 mt-3 md:mt-5 lg:mt-5 lg:mx-[3.9px] sm:mt-1 block text-[11px] md:text-base text-secondaryText">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Join our active Discord community for coding discussions, expert help, and exclusive events. Connect with fellow learners, participate in challenges, and grow in a supportive network.
                                             </p>
                                         </div>
                                     </div>
@@ -80,12 +80,12 @@ function Community() {
                                         <div className="col-span-7 sm:col-span-7 md:col-span-10 lg:col-span-10">
                                             <h2 className="lg:mt-4 md:mt-7 head text-[1.3rem] md:text-3xl md:text-[3rem]  lg:text-5xl leading-[35px] md:leading-[50px] text-secondaryHover pr-0 lg:pr-40">codemarch on Twitter</h2>
                                             <p className="leading-7 md:leading-7 lg:leading-10 mt-3 md:mt-5 lg:mt-5 lg:mx-[3.9px] sm:mt-1 block text-[11px] md:text-base text-secondaryText">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                Follow us on twitter for industry news, success stories, and real-time communication with our team. Engage with our tweets for discussions on technology, innovation, and learning.
                                             </p>
                                         </div>
                                     </div>
                                     <div className='hidden  md:block'>
-                                        <p className='gradient-underline mt-2 md:mt-6 lg:mt-6 font-bold leading-[55px] text-secondaryHover text-3xl md:text-4xl lg:text-4xl'>60,000 Followers</p>
+                                        <p className='gradient-underline mt-2 md:mt-6 lg:mt-6 font-bold leading-[55px] text-secondaryHover text-3xl md:text-4xl lg:text-4xl'>60,000+ Followers</p>
                                         <div className='mt-8'>
                                             <a href="https://twitter.com/codemarch" className='cursor-pointer'>
                                                 <img className='h-10 md:h-11 lg:h-14' src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689059414/Twitter-button_zfn2v9.svg" alt="" />

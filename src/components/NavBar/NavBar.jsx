@@ -50,12 +50,12 @@ function NavBar() {
                                 Sign up<span className="ml-1 text-xs"><FaArrowRight/></span>
                             </button>
                         </Fragment>
-                        :
-                        <button
-                            onClick={()=>setSidebar(!sidebar)}
-                        >
-                            <img class="w-9 h-9 rounded" src="https://res.cloudinary.com/ddb081sch/image/upload/v1702445256/samples/two-ladies.jpg" alt="Default avatar"></img>
-                        </button>
+                        : null
+                        // <button
+                        //     onClick={()=>setSidebar(!sidebar)}
+                        // >
+                        //     <img class="w-9 h-9 rounded" src="https://res.cloudinary.com/ddb081sch/image/upload/v1702445256/samples/two-ladies.jpg" alt="Default avatar"></img>
+                        // </button>
                     }
                 </div>
             </nav>
@@ -81,12 +81,12 @@ function NavBar() {
                                     Sign up<span className="ml-1 text-xs"><FaArrowRight/></span>
                                 </button>
                             </Fragment>
-                            :
-                            <button
-                            onClick={()=>setSidebar(!sidebar)}
-                        >
-                            <img class="w-10 h-10 rounded" src="https://res.cloudinary.com/ddb081sch/image/upload/v1702445256/samples/two-ladies.jpg" alt="Default avatar"></img>
-                        </button>
+                            :''
+                        //     <button
+                        //     onClick={()=>setSidebar(!sidebar)}
+                        // >
+                        //     <img class="w-10 h-10 rounded" src="https://res.cloudinary.com/ddb081sch/image/upload/v1702445256/samples/two-ladies.jpg" alt="Default avatar"></img>
+                        //     </button>
                         }
                     </div>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" >

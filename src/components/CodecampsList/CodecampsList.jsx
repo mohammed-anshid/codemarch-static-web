@@ -21,9 +21,9 @@ const CodecampsList = () => {
                             <span>Master.</span>
                         </h4>
                         <p className="text-sm sm:text-xl text-secondaryHover my-7 custom-line-height">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             <br className="hidden sm:block md:hidden lg:block"/>
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  */}
                         </p>
                     </div>
                 </div>
