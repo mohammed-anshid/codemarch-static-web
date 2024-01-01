@@ -5,6 +5,7 @@ import logo from '../../assets/cm-logo-1 1.svg';
 import Button from '../../assets/Property 1=Component 2.svg';
 import { motion,AnimatePresence } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
+import { GiHamburgerMenu } from "react-icons/gi";
 
 //Components
 import MyModal from '../Modal/MyModal';
@@ -50,7 +51,10 @@ function NavBar() {
                                 Sign up<span className="ml-1 text-xs"><FaArrowRight/></span>
                             </button>
                         </Fragment>
-                        : null
+                        : 
+                        <div onClick={()=>setSidebar(!sidebar)} className="block  lg:hidden ">
+                            <span className='text-3xl text-secondaryText block lg:hidden'><GiHamburgerMenu/></span>
+                        </div>
                         // <button
                         //     onClick={()=>setSidebar(!sidebar)}
                         // >
@@ -81,7 +85,10 @@ function NavBar() {
                                     Sign up<span className="ml-1 text-xs"><FaArrowRight/></span>
                                 </button>
                             </Fragment>
-                            :''
+                            :
+                            <div onClick={()=>setSidebar(!sidebar)} className="block  lg:hidden ">
+                                <span className='text-3xl text-secondaryText block lg:hidden'><GiHamburgerMenu/></span>
+                            </div>
                         //     <button
                         //     onClick={()=>setSidebar(!sidebar)}
                         // >
@@ -112,7 +119,7 @@ function NavBar() {
         }
 
         <AnimatePresence mode="wait" initial={false}>
-            {/* { sidebar && <MobileMenu state={sidebar} setState={setSidebar}/> } */}
+            { sidebar && <MobileMenu state={sidebar} setState={setSidebar}/> }
         </AnimatePresence>
         
     </>

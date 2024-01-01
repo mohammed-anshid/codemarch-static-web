@@ -5,9 +5,10 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FaCode } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 import { DiCodeigniter } from "react-icons/di";
-import { MdSpaceDashboard } from "react-icons/md";
-import { IoPerson } from "react-icons/io5";
-import { IoLogOut } from "react-icons/io5";
+import { BiSolidHome } from "react-icons/bi";
+// import { MdSpaceDashboard } from "react-icons/md";
+// import { IoPerson } from "react-icons/io5";
+// import { IoLogOut } from "react-icons/io5";
 import { Link, useNavigate } from 'react-router-dom';
 
 const framerSidebarPanel = {
@@ -98,11 +99,12 @@ const MobileMenu = ({ state, setState }) => {
 export default MobileMenu
 
 const menuItems = [
-    { icon: <MdSpaceDashboard />, text: 'Dashboard', href:'/'},
+    // { icon: <MdSpaceDashboard />, text: 'Dashboard', href:'/'},
+    { icon: <BiSolidHome />, text: 'Home', href:'/'},
     { icon: <DiCodeigniter />, text: 'Codecamps', href:'/codecamps'},
     { icon: <FaCode />, text: 'Courses', href:'/'},
-    { icon: <IoPerson />, text: 'Profile', href:'/'},
-    { icon: <IoLogOut />, text: 'Logout', href:''},
+    // { icon: <IoPerson />, text: 'Profile', href:'/'},
+    // { icon: <IoLogOut />, text: 'Logout', href:''},
 ];
 
   
