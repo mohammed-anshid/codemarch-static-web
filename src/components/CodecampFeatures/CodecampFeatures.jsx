@@ -32,41 +32,49 @@ export const CodecampFeatures = () => {
     const handleNext = () => {
         slickRef.current.slickNext();
     };
+
+    const cardData = [
+        {
+            icon: <ImStarFull />,
+            heading: "Interactive Daily Lessons",
+            text: "Dive into engaging, daily modules designed to build your coding skills step by step. Whether you're a beginner or looking to enhance your knowledge, our lessons cater to all levels.",
+        },
+        {
+            icon: <FaLightbulb />,
+            heading: "Weekly Live 1:1 Reviews",
+            text: "Connect with experts in live weekly sessions. Gain personalized feedback, deepen your understanding, and stay motivated in your coding journey.",
+        },
+        {
+            icon: <FaRegCheckCircle />,
+            heading: "24/7 Doubt Support",
+            text: "Coding challenges don't stick to a schedule, and neither do we. Our round-the-clock support ensures you're never stuck, providing timely and effective solutions to your queries.",
+        },
+    ];
   
   return (
     <>
         <div className="pt-24 md:pt-10 lg:pb-16 px-9 md:px-16">
             <div className='hidden lg:block'>
                 <div className="border-gradient max-w-screen-xl flex flex-col lg:flex-row  gap-3 mx-auto p-1 ">
-                    <Card
-                        icon={<ImStarFull/>}
-                        heading="Feature 1"
-                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    />
-                
-                    <div className=" h-[2px] my-10 bg-gradient-to-r lg:my-0  lg:w-[2px] lg:h-auto  lg:bg-gradient-to-b from-[#d7cea500] via-[#d7cea5] to-[#d7cea500] "></div>
-                    <Card
-                        icon={<FaLightbulb/>}
-                        heading="Feature 1"
-                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    />
-                    <div className=" h-[2px] my-10 bg-gradient-to-r lg:my-0  lg:w-[2px] lg:h-auto  lg:bg-gradient-to-b from-[#d7cea500] via-[#d7cea5] to-[#d7cea500] "></div>
-                    <Card
-                        icon={<FaRegCheckCircle/>}
-                        heading="Feature 1"
-                        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                    />
+                    {cardData.map((item, index) => (
+                        <React.Fragment key={index}>
+                            {item.icon && (
+                                <Card icon={item.icon} heading={item.heading} text={item.text} />
+                            )}
+                            {( index === 0 || index === 1 ) && (
+                                <div className="h-[2px] my-10 bg-gradient-to-r lg:my-0 lg:w-[2px] lg:h-auto lg:bg-gradient-to-b from-[#d7cea500] via-[#d7cea5] to-[#d7cea500]"></div>
+                            )}
+                        </React.Fragment>
+                    ))}
                 </div>
             </div>
 
             <div className="bootcamps max-w-screen-xl lg:hidden pb-10">
                 <Slider {...settings} ref={slickRef}>
-                    {featuresCard.map((card) => (
-                        <Card key={card.id} icon={card.icon} heading={card.heading} text={card.text} />
+                    {cardData.map((item,index) => (
+                        <Card key={index} icon={item.icon} heading={item.heading} text={item.text} />
                     ))}
                 </Slider>
-
-                
             </div>
         
             <div className='w-72 h-12  lg:hidden rounded-lg border-t  bg-gradient-to-b from-[#3d8361ef] via-[#3d836158] to-transparent flex items-center mx-auto mt-7'>
@@ -89,7 +97,9 @@ const Card = ({ icon, heading, text }) => {
                 <span className='text-center bg-gradient-to-t from-secondaryText to-secondaryHover bg-clip-text text-secondaryHover self-center text-3xl md:text-4xl'>{icon}</span>
             </div>
             <h1 className="mt-5 text-3xl md:text-4xl header font-extrabold text-[#EDF1E4]">{heading}</h1>
-            <p className="mt-5 md:mt-8 leading-8 md:leading-10 text-sm md:text-base text-[#D7CEA5]">{text}</p>
+            <p className="mt-5 md:mt-8 leading-7 md:leading-10 text-sm md:text-base text-[#D7CEA5] lg:max-w-[500px]">
+                {text}
+            </p>
         </div>
     );
 };

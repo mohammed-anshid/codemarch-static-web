@@ -37,7 +37,6 @@ const Learn = () => {
                         codecamp.highlights.map((item,index)=>{
                             console.log(item)
                             return (
-                                
                                 <Points text={item} />
                             )
                         })

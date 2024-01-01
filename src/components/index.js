@@ -216,9 +216,9 @@ export const codecamps = [
       "Interactive Learning"
     ],
     whatYoullGet: [
-      "Hands-On Experience: Build real-world projects including personal websites and interactive landing pages.",
-      "Expert Knowledge: Learn HTML, CSS, Tailwind, and Git with step-by-step guidance and practical examples.",
-      "Community Support: Join a community of learners and experts on CodeMarch, share your progress, and collaborate on projects."
+      {title :'Hands-On Experience', description:'Build real-world projects including personal websites and interactive landing pages'},
+      {title :'Expert Knowledge', description:'Learn HTML, CSS, Tailwind, and Git with step-by-step guidance and practical examples.'},
+      {title :'Community Support', description: 'Join a community of learners and experts on CodeMarch, share your progress, and collaborate on projects'}
     ],
     aboutCourse: "This 30-day CodeCamp is tailored to build a solid foundation in web development. It introduces key concepts and tools including HTML, CSS, Tailwind CSS, and Git, laying the groundwork for your journey as a developer. Through a blend of theory, practical exercises, and project work, the course ensures a comprehensive grasp of essential web development skills. While it won't make you an expert overnight, it sets the stage for advanced learning and development in the field.",
 
@@ -269,9 +269,10 @@ export const codecamps = [
       "Deployment Best Practices"
     ],
     whatYoullGet: [
-      "In-Depth Learning: Delve into every aspect of JavaScript, from basics to complex concepts.",
-      "Project-Based Approach: Apply your learning in real-world scenarios through weekly projects.",
-      "Weekly 1:1 Expert Review: Receive personalized guidance and feedback from experienced developers to enhance your learning and development."
+      { title: 'In-Depth Learning', description: 'Delve into every aspect of JavaScript, from basics to complex concepts.' },
+      { title: 'Project-Based Approach', description: 'Apply your learning in real-world scenarios through weekly projects.' },
+      { title: 'Weekly 1:1 Expert Review', description: 'Receive personalized guidance and feedback from experienced developers to enhance your learning and development.' }
+      // ... other properties
     ],
     aboutCourse: "Our '100 Days of JavaScript Mastery' course offers a structured and progressive journey through JavaScript. It blends theoretical learning with practical application, covering everything from basic concepts to advanced JavaScript features. Each week alternates between focused learning and project work, culminating in weekly 1:1 reviews with experienced developers. This format ensures a deep understanding of JavaScript, preparing you for real-world development challenges.",
     // "syllabus": [
@@ -386,9 +387,10 @@ export const codecamps = [
       "Deployment Best Practices"
     ],
     whatYoullGet: [
-      "Foundational Skills: Start from the basics and gradually delve into complex React features.",
-      "Practical Projects: Apply your knowledge through weekly hands-on projects, building everything from user profiles to a full-fledged music player app.",
-      "Expert Insights: Learn the latest practices in React development, including hooks, state management, and performance optimization."
+      { title: 'Foundational Skills', description: 'Start from the basics and gradually delve into complex React features.' },
+      { title: 'Practical Projects', description: 'Apply your knowledge through weekly hands-on projects, building everything from user profiles to a full-fledged music player app.' },
+      { title: 'Expert Insights', description: 'Learn the latest practices in React development, including hooks, state management, and performance optimization.' }
+      // ... other properties
     ],
     aboutCourse: "\"30 Days to React Mastery\" is a foundational course designed to introduce you to React. Over 30 days, you'll learn the basics and explore advanced concepts through a mix of theory and practical projects. While this course lays a solid foundation, mastering React requires ongoing practice beyond these 30 days. Our aim is to equip you with the necessary skills and understanding to continue your learning journey in React development.",
     // "syllabus": [
@@ -462,9 +464,10 @@ export const codecamps = [
       "Practical Projects"
     ],
     whatYoullGet: [
-      "Hands-On Experience: Build real-world projects with Tailwind CSS.",
-      "Comprehensive Learning: Cover the basics and advanced features of Tailwind CSS.",
-      "Community Support: Join a community of learners, share your progress, and collaborate on projects."
+      { title: 'Hands-On Experience', description: 'Build real-world projects with Tailwind CSS.' },
+      { title: 'Comprehensive Learning', description: 'Cover the basics and advanced features of Tailwind CSS.' },
+      { title: 'Community Support', description: 'Join a community of learners, share your progress, and collaborate on projects.' }
+      // ... other properties
     ],
     aboutCourse: "This 30-day Tailwind CSS CodeCamp is tailored to help you master the art of responsive web design using utility-first CSS. Each day covers essential concepts, providing you with a solid foundation for creating visually appealing and responsive web pages.",
     // "syllabus": [
@@ -619,5 +622,5 @@ export const codecamps = [
     //     "text": "Showcasing and sharing your final Tailwind CSS projects."
     //   }
     // ]
-  }
+  },
 ]

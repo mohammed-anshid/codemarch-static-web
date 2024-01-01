@@ -29,7 +29,7 @@ const CodecampsList = () => {
                 </div>
                 <div className="bootcamps flex overflow-x-auto gap-8">
                     {codecamps.map((item,index) => (
-                        <div onClick={()=>navigate(`/codecamp/${item.id}`)} key={item.id} className="md:w-72 mt-10 max-h-max mb-10 cursor-pointer bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.6px] rounded-[20px]">
+                        <div onClick={()=>navigate(`/codecamp/${item.id}`)} key={index} className="md:w-72  mt-10 max-h-max mb-10 cursor-pointer bg-gradient-to-t from-[#3d8361] to-[#D6CCA4] p-[1.6px] rounded-[20px]">
                             <div className='mx-auto h-full rounded-[20px] overflow-hidden bg-[#001e18]  bg-gradient-to-t from-[#001e18] to-transparent'>
 
                                 <div className="m-3 max-h-max">
@@ -53,14 +53,15 @@ const CodecampsList = () => {
 
                                         <div className="flex items-center gap-2 pt-5 md:pt-10 mt-7">
                                             <div className="flex -space-x-5 md:-space-x-4 ">
-                                                {/* <div className="samllbox"></div>
                                                 <div className="samllbox"></div>
                                                 <div className="samllbox"></div>
-                                                <div className="samllbox"></div>               */}
+                                                <div className="samllbox"></div>
+                                                <div className="samllbox"></div>              
+                                               
                                             </div>
                                             <div className="flex justify-between">
-                                                {/* <h4 className="textStyle ml-5  w-20">Students</h4>
-                                                <h4 className="textStyle ml-2  w-20">{item.time}</h4> */}
+                                                <h4 className="textStyle ml-5  w-20"></h4>
+                                                <h4 className="textStyle ml-2  w-20"></h4>
                                             </div>
                                         </div>
                                   
