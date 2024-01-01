@@ -22,9 +22,6 @@ const CodecampsList = () => {
                             <span>Master.</span>
                         </h4>
                         <p className="text-sm sm:text-xl text-secondaryHover my-7 custom-line-height">
-                            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            <br className="hidden sm:block md:hidden lg:block"/>
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  */}
                             Empowering your journey, transforming your career. At codemarch, 
                             <br className="hidden sm:block md:hidden lg:block"/>
                             we're committed to unlocking your full potential in the tech world, everywhere you are.
