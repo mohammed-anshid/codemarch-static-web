@@ -4,7 +4,7 @@ import BannerImg from '../../assets/Banner/Codecamp-Banner.svg';
 import { FaArrowRight } from 'react-icons/fa';
 
 
-const Banner = () => {
+const Banner = ({ onSubmit }) => {
 
   return (
     <>
@@ -19,13 +19,13 @@ const Banner = () => {
                             <span>Skills</span>
                         </h4>
                         <p className="text-sm sm:text-xl text-secondaryHover my-7">Daily lessons, weekly live help, anytime support.</p>
-                        <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-full md:w-56 h-10 md:h-14 justify-center mt-6 md:mt-9 lg:mt-10 rounded-[9px]">
+                        <button onClick={onSubmit} className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-full md:w-56 h-10 md:h-14 justify-center mt-6 md:mt-9 lg:mt-10 rounded-[9px]">
                             Explore<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
                         </button>
                     </div>
                 </div>
 
-                <div className="faded faded-top faded-bottom faded-left bg-gradient-to-r overflow-x-auto shadow-inner  from-transparent via-[#002b23] to-transparent mt-10">
+                <div  className="faded faded-top faded-bottom faded-left bg-gradient-to-r overflow-x-auto shadow-inner  from-transparent via-[#002b23] to-transparent mt-10">
                     <img src={BannerImg} alt="" className="fade-image " />
                 </div>
             </div>
