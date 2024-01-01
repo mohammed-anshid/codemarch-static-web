@@ -7,6 +7,7 @@ import button from "../../assets/images/property-button.svg";
 import avatar from "../../assets/images/avatar.svg";
 import vector from "../../assets/images/Vector-Arrow.svg";
 import approve from "../../assets/images/Vector (1).png";
+import { FaArrowRight } from "react-icons/fa";
 
 function Courses() {
   useEffect(() => {
@@ -47,6 +48,9 @@ function Courses() {
                     </p>
                   </div>
                   <div class="px-6 pt-6 pb-3 mb-3 text-center">
+                    {/* <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-52 md:w-52 h-10 md:h-12 justify-center mt-6 md:mt-9 lg:mt-10 rounded-[9px]">
+                      Explore<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
+                    </button> */}
                     <button>
                       <img className="h-12" src={button} alt="" />
                     </button>
@@ -90,6 +94,9 @@ function Courses() {
                 <button>
                   <img className="h-12" src={button} alt="" />
                 </button>
+                {/* <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-52 md:w-52 h-10 md:h-12 justify-center mt-6 md:mt-9 lg:mt-10 rounded-[9px]">
+                  Explore<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
+                </button> */}
               </div>
             </div>
           </div>

@@ -10,11 +10,13 @@ import vector3 from "../../assets/Banner/vector-3.svg"
 import { useMediaQuery } from 'react-responsive';
 import { FaArrowRight } from 'react-icons/fa';
 import CardMd from "../Cards/CardMd";
+import { useNavigate } from "react-router-dom";
 
 
 function Brand() {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const isMdScreenOrLarger = useMediaQuery({ minWidth: 1026 });
+  const navigate = useNavigate()
 
   const cards = [
     {title:'Code',img:'https://res.cloudinary.com/dbb0ncoht/image/upload/v1689154320/Group_1_1_nqvkdt.svg',img2:vector1},
@@ -78,11 +80,11 @@ function Brand() {
 
       </div>
       <div className="content mx-3 lg:mx-[22rem] md:mx-7  text-center">
-        <h3 className="text-[12px] md:text-[1rem] lg:text-[1.4rem] leading-7 md:leading-[40px] text-[#EDF1E4]">
+        <h3 className="text-[17px] md:text-[1rem] lg:text-[1.4rem] leading-7 md:leading-[40px] text-[#EDF1E4]">
           Master coding, build your brand & land your dream job. <br /> Launch your coding career with confidence
         </h3>
-        <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-full md:w-56 h-10 md:h-14 justify-center mt-6 md:mt-9 lg:mt-12 rounded-[9px]">
-          Get Started<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
+        <button onClick={()=>navigate('/codecamps')} className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-full md:w-56 h-10 md:h-14 justify-center mt-6 md:mt-9 lg:mt-12 rounded-[9px]">
+          Explore<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
         </button>
       </div>
     </section>

@@ -15,7 +15,7 @@ const CodeCamp = () => {
         <CodecampFeatures/>
         <CodecampsList/>
         <Socials/>
-        <Review/>
+        {/* <Review/> */}
         <Footer/>
     </>
   )
