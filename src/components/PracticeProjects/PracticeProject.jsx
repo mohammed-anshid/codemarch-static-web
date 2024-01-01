@@ -1,6 +1,7 @@
 import React from 'react'
 
 const PracticeProject = () => {
+    const icons = []
   return (
     <>
         <div className="flex flex-col mt-[7.5rem] gap-3 lg:flex-row ">

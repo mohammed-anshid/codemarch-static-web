@@ -112,7 +112,7 @@ function NavBar() {
         }
 
         <AnimatePresence mode="wait" initial={false}>
-            { sidebar && <MobileMenu state={sidebar} setState={setSidebar}/> }
+            {/* { sidebar && <MobileMenu state={sidebar} setState={setSidebar}/> } */}
         </AnimatePresence>
         
     </>
