@@ -222,39 +222,62 @@ export const codecamps = [
     ],
     aboutCourse: "This 30-day CodeCamp is tailored to build a solid foundation in web development. It introduces key concepts and tools including HTML, CSS, Tailwind CSS, and Git, laying the groundwork for your journey as a developer. Through a blend of theory, practical exercises, and project work, the course ensures a comprehensive grasp of essential web development skills. While it won't make you an expert overnight, it sets the stage for advanced learning and development in the field.",
 
-    // "syllabus": {
-    //   "days": [
-    //     { day: "Day 1", title: "Basics of HTML", "text": "Setting Up, Headings, Paragraphs, Text Formatting" },
-    //     { "day": "Day 2", "title": "Links, Anchor Tags, Images, Favicon, Lists" },
-    //     { "day": "Day 3", "title": "Tables, HTML Blocks & Inlines, Forms, Semantic Elements" },
-    //     { "day": "Day 4", "title": "Iframes, Multimedia, Emojis, Canvas" },
-    //     { "day": "Day 5", "title": "Building a Personal Website" },
-    //     { "day": "Day 6", "title": "Introduction to Git - Installation, Staging, Checkouts, Branches, Merging, .gitignore" },
-    //     { "day": "Day 7", "title": "Getting Started with GitHub - Repository Creation, Pushing Code, Collaboration, Forking, Cloning, Pull Requests" },
-    //     { "day": "Day 8", "title": "Rest Day" },
-    //     { "day": "Day 9", title: "CSS Introduction" , description:"you will delve into the fundamental concepts of Cascading Style Sheets" , 
-    //       includes:['Adding CSS, Selectors, Colors, Backgrounds','CSS Text & Effects - Opacity, Filters, Box Sizing, Pseudo-Classes','CSS Box Model, Display Properties','CSS Positioning, Fonts, Z-index, Overflow, Float','CSS Values & Units, Shadows, Gradients, Flexbox, Transitions, Animations',"CSS Media Queries, Responsive Web Design","Designing a Landing Page"] 
-    //     },
-    //     { "day": "Day 10", "title": "" },
-    //     { "day": "Day 11", "title": "" },
-    //     { "day": "Day 12", "title": "" },
-    //     { "day": "Day 13", "title": "" },
-    //     { "day": "Day 14", "title":  },
-    //     { "day": "Days 15 & 16", "title":  },
-    //     { "day": "Days 17 & 18", "title": },
-    //     { "day": "Day 19", "title": "Rest Day" },
-    //     { "day": "Day 20", "title": "Tailwind Basics - Layout, Spacing" },
-    //     { "day": "Day 21", "title": "Tailwind Components - Flexbox, Grid, Responsive Classes, Cards, Badges" },
-    //     { "day": "Day 22", "title": "Tailwind Transitions" },
-    //     { "day": "Days 23 & 24", "title": "Creating a Landing Page" },
-    //     { "day": "Days 25 & 26", "title": "Projects with Light/Dark Modes" },
-    //     { "day": "Day 27", "title": "Rest Day" },
-    //     { "day": "Day 28", "title": "Content Creation Techniques" },
-    //     { "day": "Day 29", "title": "Practical Content Creation" },
-    //     { "day": "Day 30", "title": "Review Day" }
-    //   ]
-    // }
     
+    syllabus : [
+      {
+        title: "Basics of HTML",
+        description: "Introduction to HTML fundamentals, covering setting up, headings, paragraphs, and text formatting.",
+        includes: [
+          { title: "Setting Up, Headings, Paragraphs, Text Formatting", description: "Cover foundational HTML concepts for document structure and formatting." },
+          { title: "Links, Anchor Tags, Images, Favicon, Lists", description: "Explore hyperlinking, image usage, and list structures in HTML." },
+          { title: "Tables, HTML Blocks & Inlines, Forms, Semantic Elements", description: "Learn about tables, HTML block elements, forms, and semantic tags." },
+          { title: "Iframes, Multimedia, Emojis, Canvas", description: "Integrate multimedia elements, emojis, and canvas in HTML documents." },
+          { title: "Building a Personal Website", description: "Apply learned HTML concepts to create a personal website project." },
+        ],
+      },
+      {
+        title: "Introduction to Git",
+        description: "Learn Git essentials, including installation, staging, checkouts, branches, merging, and .gitignore.",
+        includes: [
+          { title: "Installation, Staging, Checkouts, Branches, Merging, .gitignore", description: "Set up Git, stage changes, work with branches, and manage project files." },
+          { title: "Repository Creation, Pushing Code, Collaboration, Forking, Cloning, Pull Requests", description: "Learn GitHub basics, including repository creation, collaboration, and pull requests." },
+        ],
+      },
+      {
+        title: "CSS Introduction",
+        description: "Dive into Cascading Style Sheets, exploring various selectors, colors, and mastering visually appealing backgrounds.",
+        includes: [
+          { title: 'Adding CSS, Selectors, Colors, Backgrounds', description: 'Explore various selectors for targeting elements, experiment with a spectrum of colors, and master the art of crafting visually appealing backgrounds' },
+          { title: 'CSS Text & Effects - Opacity, Filters, Box Sizing, Pseudo-Classes', description: "Apply text effects, opacity, filters, and box-sizing in CSS." },
+          { title: 'CSS Box Model, Display Properties', description: "Understand the box model, display properties, and layout in CSS." },
+          { title: 'CSS Positioning, Fonts, Z-index, Overflow, Float', description: "Learn about positioning, fonts, z-index, overflow, and float in CSS." },
+          { title: 'CSS Values & Units, Shadows, Gradients, Flexbox, Transitions, Animations', description: "Explore CSS values, shadows, gradients, flexbox, transitions, and animations." },
+          { title: "CSS Media Queries, Responsive Web Design", description: "Implement media queries for responsive web design in CSS." },
+          { title: "Designing a Landing Page", description: "Apply CSS concepts to design a landing page project." }
+        ],
+      },
+      {
+        title: "Tailwind Basics",
+        description: "Understand the basics of Tailwind CSS, covering layout, spacing, components, and transitions.",
+        includes: [
+          { title: "Tailwind Basics - Layout, Spacing", description: "Learn foundational concepts of layout and spacing in Tailwind CSS." },
+          { title: "Tailwind Components - Flexbox, Grid, Responsive Classes, Cards, Badges", description: "Explore Tailwind components, including flexbox, grid, responsive classes, cards, and badges." },
+          { title: "Tailwind Transitions", description: "Understand transitions and animations in Tailwind CSS." },
+          { title: "Tailwind Basics - Layout, Spacing", description: "Revisit Tailwind basics related to layout and spacing." },
+          { title: "Creating a Landing Page", description: "Apply Tailwind CSS concepts to create a landing page project." },
+          { title: "Projects with Light/Dark Modes", description: "Implement light and dark modes in Tailwind CSS projects." },
+        ],
+      },
+      {
+        title: "Content Creation",
+        description: "Explore techniques for content creation, practical application, and a dedicated review day.",
+        includes: [
+          { title: "Content Creation Techniques", description: "Learn techniques for effective content creation." },
+          { title: "Practical Content Creation", description: "Apply content creation techniques in practical scenarios." },
+          { title: "Review Day", description: "Dedicated day for reviewing and reinforcing learned concepts." },
+        ],
+      },
+    ]
   },
 
   {
@@ -275,104 +298,55 @@ export const codecamps = [
       // ... other properties
     ],
     aboutCourse: "Our '100 Days of JavaScript Mastery' course offers a structured and progressive journey through JavaScript. It blends theoretical learning with practical application, covering everything from basic concepts to advanced JavaScript features. Each week alternates between focused learning and project work, culminating in weekly 1:1 reviews with experienced developers. This format ensures a deep understanding of JavaScript, preparing you for real-world development challenges.",
-    // "syllabus": [
-    //   {
-    //     "week": 1,
-    //     "topics": [
-    //       "Intro to JavaScript",
-    //       "Variables & Constants",
-    //       "Data Types & Operators",
-    //       "Conditional Statements",
-    //       "Loops",
-    //       "Functions",
-    //       "Arrays"
-    //     ]
-    //   },
-    //   {
-    //     "week": 2,
-    //     "topics": ["Various JavaScript Assignments"]
-    //   },
-    //   {
-    //     "week": 3,
-    //     "topics": [
-    //       "Strings & Objects",
-    //       "Basic DOM Manipulation",
-    //       "Dates & Math Operations",
-    //       "Hoisting & Scopes",
-    //       "Classes & Properties",
-    //       "Sets & Maps",
-    //       "Recursion"
-    //     ]
-    //   },
-    //   {
-    //     "week": 4,
-    //     "topics": ["Advanced JavaScript Projects"]
-    //   },
-    //   {
-    //     "week": 5,
-    //     "topics": [
-    //       "Destructuring",
-    //       "Rest & Spread Operators",
-    //       "Callbacks",
-    //       "Promises & Chaining",
-    //       "Async/Await",
-    //       "Timers",
-    //       "Closures"
-    //     ]
-    //   },
-    //   {
-    //     "week": 6,
-    //     "topics": ["Interactive JavaScript Projects"]
-    //   },
-    //   {
-    //     "week": 7,
-    //     "topics": [
-    //       "Modules in JS",
-    //       "Object-Oriented Programming",
-    //       "DOM & Event Listeners",
-    //       "Advanced DOM",
-    //       "Prototypes",
-    //       "Function Types",
-    //       "Memoization"
-    //     ]
-    //   },
-    //   {
-    //     "week": 8,
-    //     "topics": ["Complex JS Assignments"]
-    //   },
-    //   {
-    //     "week": 9,
-    //     "topics": [
-    //       "Introduction to APIs",
-    //       "Advanced API Concepts",
-    //       "Event Loop & Call Stack",
-    //       "Polyfill Techniques",
-    //       "Currying",
-    //       "Event Handling Techniques",
-    //       "Deep vs Shallow Copy"
-    //     ]
-    //   },
-    //   {
-    //     "week": 10,
-    //     "topics": ["API and Event-Driven Projects"]
-    //   },
-    //   {
-    //     "week": 11,
-    //     "topics": [
-    //       "Debouncing",
-    //       "Throttling",
-    //       "Execution Context",
-    //       "V8 Engine",
-    //       "Ecosystem Tools",
-    //       "Debugging Techniques",
-    //       "Miscellaneous Topics"
-    //     ]
-    //   },
-    //   {
-    //     "week": "12-15",
-    //     "topics": ["Comprehensive Project Work"]
-    //   }
-    // ]
+    syllabus: [
+      {
+        title: "Intro to JavaScript",
+        description: "Foundational concepts of JavaScript including variables, constants, data types, operators, conditional statements, loops, functions, and arrays.",
+        includes: [
+          { title: "Variables & Constants", description: "Understand how to declare and use variables and constants in JavaScript." },
+          { title: "Data Types & Operators", description: "Explore various data types and operators in JavaScript." },
+          { title: "Conditional Statements", description: "Learn about if statements, switch statements, and other conditional structures." },
+          { title: "Loops", description: "Master different types of loops like for, while, and do-while loops." },
+          { title: "Functions", description: "Understand the creation and usage of functions in JavaScript." },
+          { title: "Arrays", description: "Explore arrays and their manipulation in JavaScript." },
+        ],
+      },
+      {
+        title: "Various JavaScript Assignments",
+        description: "Apply and reinforce JavaScript concepts through various coding assignments.",
+        includes: [
+          {
+            title: "Assignment 1: Hello World",
+            description: "Write a JavaScript program that prints 'Hello, World!' to the console.",
+          },
+          {
+            title: "Assignment 2: Variable Manipulation",
+            description: "Create variables to store information such as your name, age, and favorite programming language. Output these variables in a formatted message.",
+          },
+          {
+            title: "Assignment 3: Basic Math Operations",
+            description: "Write a JavaScript program that performs basic math operations (addition, subtraction, multiplication, division) on two numbers.",
+          },
+          // Add more includes as needed...
+        ],
+      },
+      {
+        title: "Advanced Concepts",
+        description: "Explore advanced JavaScript topics such as strings, objects, basic DOM manipulation, dates, math operations, hoisting, scopes, classes, properties, sets, maps, and recursion.",
+        includes: [
+          { title: "Strings & Objects", description: "Learn about strings and objects in JavaScript." },
+          { title: "Basic DOM Manipulation", description: "Understand basic DOM manipulation techniques." },
+          { title: "Dates & Math Operations", description: "Explore working with dates and various math operations." },
+          { title: "Hoisting & Scopes", description: "Understand hoisting and different scopes in JavaScript." },
+          { title: "Classes & Properties", description: "Learn about classes and properties in JavaScript." },
+          { title: "Sets & Maps", description: "Explore sets and maps in JavaScript." },
+          { title: "Recursion", description: "Understand the concept of recursion in programming." },
+          // Add more includes as needed...
+        ],
+      },
+      // Add content for the remaining weeks...
+    ]
+    
   },
 
   {
@@ -392,64 +366,73 @@ export const codecamps = [
       { title: 'Expert Insights', description: 'Learn the latest practices in React development, including hooks, state management, and performance optimization.' }
       // ... other properties
     ],
-    aboutCourse: "\"30 Days to React Mastery\" is a foundational course designed to introduce you to React. Over 30 days, you'll learn the basics and explore advanced concepts through a mix of theory and practical projects. While this course lays a solid foundation, mastering React requires ongoing practice beyond these 30 days. Our aim is to equip you with the necessary skills and understanding to continue your learning journey in React development.",
-    // "syllabus": [
-    //   {
-    //     "week": 1,
-    //     "topics": [
-    //       "Getting Started with React",
-    //       "Understanding Components",
-    //       "Hands-On Project: Create a Card",
-    //       "Using Props in Components",
-    //       "Styling and Media in React",
-    //       "Hands-On Project: User Profile",
-    //       "Introduction to Hooks"
-    //     ]
-    //   },
-    //   {
-    //     "week": 2,
-    //     "topics": [
-    //       "Hands-On Project: Task Tracker App",
-    //       "Working with Effects",
-    //       "Styling in React",
-    //       "Hands-On Project: Random Quote Generator",
-    //       "Dynamic Rendering in React",
-    //       "Working with Forms in React",
-    //       "Hands-On Project: API Key Generator"
-    //     ]
-    //   },
-    //   {
-    //     "week": 3,
-    //     "topics": [
-    //       "Routing in React",
-    //       "Hands-On Project: Gadget Store",
-    //       "Class Components in React",
-    //       "React Lifecycle Methods",
-    //       "Hands-On Project: Movie Finder",
-    //       "State Management in React",
-    //       "Hands-On Project: Book Store Website"
-    //     ]
-    //   },
-    //   {
-    //     "week": 4,
-    //     "topics": [
-    //       "Higher-Order Components (HOCs)",
-    //       "Rendering Patterns in React",
-    //       "Hands-On Project: Music Player App",
-    //       "Error Handling in React",
-    //       "More Hooks: Beyond useState and useEffect",
-    //       "Creating Custom Hooks",
-    //       "Performance Optimization in React"
-    //     ]
-    //   },
-    //   {
-    //     "week": 5,
-    //     "topics": [
-    //       "Mega Project Day: Code Editor",
-    //       "Deployment Day"
-    //     ]
-    //   }
-    // ]
+    aboutCourse: " 30 Days to React Mastery : is a foundational course designed to introduce you to React. Over 30 days, you'll learn the basics and explore advanced concepts through a mix of theory and practical projects. While this course lays a solid foundation, mastering React requires ongoing practice beyond these 30 days. Our aim is to equip you with the necessary skills and understanding to continue your learning journey in React development.",
+    syllabus: [
+      {
+        title: "Getting Started with React",
+        description: "Introduction to the basics of React, covering components, props, styling, and an overview of hooks.",
+        includes: [
+          { title: "Understanding Components", description: "Learn the fundamentals of React components." },
+          { title: "Hands-On Project: Create a Card", description: "Apply component knowledge to create a card in a practical project." },
+          { title: "Using Props in Components", description: "Explore the usage of props to pass data between React components." },
+          { title: "Styling and Media in React", description: "Learn styling techniques and handling media in React." },
+          { title: "Hands-On Project: User Profile", description: "Create a user profile project using React components." },
+          { title: "Introduction to Hooks", description: "Understand the basics of React hooks." },
+        ],
+      },
+    
+      {
+        title: "Hand-On Project",
+        description: "Hands-on projects to apply and reinforce React concepts.",
+        includes: [
+          { title: "Task Tracker App", description: "Build a task tracker application in React." },
+          { title: "Working with Effects", description: "Explore the usage of effects in React." },
+          { title: "Styling in React", description: "Learn advanced styling techniques in React." },
+          { title: "Hands-On Project: Random Quote Generator", description: "Create a project generating random quotes using React." },
+          { title: "Dynamic Rendering in React", description: "Understand dynamic rendering techniques in React." },
+          { title: "Working with Forms in React", description: "Explore form handling in React applications." },
+          { title: "Hands-On Project: API Key Generator", description: "Build a project generating API keys using React." },
+        ],
+      },
+    
+      {
+        title: "Moving to Routing in React",
+        description: "Transition into more advanced topics, including routing in React.",
+        includes: [
+          { title: "Routing in React", description: "Learn about routing concepts and implementation in React." },
+          { title: "Hands-On Project: Gadget Store", description: "Create a gadget store project with React routing." },
+          { title: "Class Components in React", description: "Understand and work with class components in React." },
+          { title: "React Lifecycle Methods", description: "Explore lifecycle methods in React." },
+          { title: "Hands-On Project: Movie Finder", description: "Build a movie finder project using React." },
+          { title: "State Management in React", description: "Learn about state management in React applications." },
+          { title: "Hands-On Project: Book Store Website", description: "Create a book store website project with React." },
+        ],
+      },
+      
+      {
+        title: "Exploring Advanced Topics in React",
+        description: "Delve into advanced topics such as higher-order components, rendering patterns, error handling, hooks beyond basics, creating custom hooks, and performance optimization.",
+        includes: [
+          { title: "Higher-Order Components (HOCs)", description: "Explore the concept and usage of higher-order components in React." },
+          { title: "Rendering Patterns in React", description: "Understand different rendering patterns in React applications." },
+          { title: "Hands-On Project: Music Player App", description: "Create a music player app project using React." },
+          { title: "Error Handling in React", description: "Learn techniques for error handling in React applications." },
+          { title: "More Hooks: Beyond useState and useEffect", description: "Explore additional hooks beyond the basics." },
+          { title: "Creating Custom Hooks", description: "Understand how to create and use custom hooks in React." },
+          { title: "Performance Optimization in React", description: "Learn techniques for optimizing the performance of React applications." },
+        ],
+      },
+    
+      {
+        title: "React Project & Deployment",
+        description: "Conclude the course with a mega project day for a code editor and deployment day.",
+        includes: [
+          { title: "Mega Project Day: Code Editor", description: "Work on a substantial project to create a code editor using React." },
+          { title: "Deployment Day", description: "Learn and execute deployment strategies for React applications." },
+        ],
+      },
+    ]
+    
   },
 
   {
@@ -470,157 +453,19 @@ export const codecamps = [
       // ... other properties
     ],
     aboutCourse: "This 30-day Tailwind CSS CodeCamp is tailored to help you master the art of responsive web design using utility-first CSS. Each day covers essential concepts, providing you with a solid foundation for creating visually appealing and responsive web pages.",
-    // "syllabus": [
-    //   {
-    //     "day": 1,
-    //     "title": "Introduction to Tailwind CSS",
-    //     "text": "Understanding the basics, installation, and project setup."
-    //   },
-    //   {
-    //     "day": 2,
-    //     "title": "Utility-First Philosophy",
-    //     "text": "Exploring the utility-first approach and its advantages."
-    //   },
-    //   {
-    //     "day": 3,
-    //     "title": "Responsive Design",
-    //     "text": "Creating responsive layouts and handling different screen sizes."
-    //   },
-    //   {
-    //     "day": 4,
-    //     "title": "Typography and Text Styling",
-    //     "text": "Working with fonts, text sizes, and styles."
-    //   },
-    //   {
-    //     "day": 5,
-    //     "title": "Colors and Backgrounds",
-    //     "text": "Using colors, gradients, and background utilities."
-    //   },
-    //   {
-    //     "day": 6,
-    //     "title": "Spacing and Sizing",
-    //     "text": "Managing spacing, padding, and margin utilities."
-    //   },
-    //   {
-    //     "day": 7,
-    //     "title": "Flexbox and Grid",
-    //     "text": "Applying Flexbox and Grid utilities for layout design."
-    //   },
-    //   {
-    //     "day": 8,
-    //     "title": "Forms and Inputs",
-    //     "text": "Styling forms, inputs, and form elements with Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 9,
-    //     "title": "Navigation Menus",
-    //     "text": "Creating responsive navigation menus with Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 10,
-    //     "title": "Project: Personal Portfolio",
-    //     "text": "Building a personal portfolio website using Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 11,
-    //     "title": "Animations and Transitions",
-    //     "text": "Adding animations and transitions to enhance user experience."
-    //   },
-    //   {
-    //     "day": 12,
-    //     "title": "Hover and Focus Styles",
-    //     "text": "Creating interactive hover and focus styles for elements."
-    //   },
-    //   {
-    //     "day": 13,
-    //     "title": "Customizing Tailwind CSS",
-    //     "text": "Understanding configuration and customizing Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 14,
-    //     "title": "Responsive Images",
-    //     "text": "Handling images and optimizing for different devices."
-    //   },
-    //   {
-    //     "day": 15,
-    //     "title": "Dark Mode Implementation",
-    //     "text": "Implementing dark mode for your Tailwind CSS projects."
-    //   },
-    //   {
-    //     "day": 16,
-    //     "title": "Project: Blog Design",
-    //     "text": "Designing a responsive blog using Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 17,
-    //     "title": "Optimizing for Performance",
-    //     "text": "Tips and tricks for optimizing Tailwind CSS for performance."
-    //   },
-    //   {
-    //     "day": 18,
-    //     "title": "Working with Plugins",
-    //     "text": "Exploring and using Tailwind CSS plugins."
-    //   },
-    //   {
-    //     "day": 19,
-    //     "title": "Tailwind CSS and JavaScript",
-    //     "text": "Integrating Tailwind CSS with JavaScript frameworks."
-    //   },
-    //   {
-    //     "day": 20,
-    //     "title": "Project: E-commerce Site",
-    //     "text": "Building a responsive e-commerce site with Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 21,
-    //     "title": "Best Practices",
-    //     "text": "Understanding and following best practices in Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 22,
-    //     "title": "Accessibility in Design",
-    //     "text": "Ensuring accessibility in your Tailwind CSS projects."
-    //   },
-    //   {
-    //     "day": 23,
-    //     "title": "Localization and Internationalization",
-    //     "text": "Handling localization and internationalization in Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 24,
-    //     "title": "Project: Social Media Dashboard",
-    //     "text": "Designing a social media dashboard using Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 25,
-    //     "title": "State Management with Alpine.js",
-    //     "text": "Integrating Tailwind CSS with Alpine.js for state management."
-    //   },
-    //   {
-    //     "day": 26,
-    //     "title": "Project: Landing Page",
-    //     "text": "Creating an engaging landing page with Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 27,
-    //     "title": "Versioning and Upgrading Tailwind CSS",
-    //     "text": "Managing versions and upgrading Tailwind CSS in projects."
-    //   },
-    //   {
-    //     "day": 28,
-    //     "title": "Project: Tech Conference Website",
-    //     "text": "Designing a tech conference website using Tailwind CSS."
-    //   },
-    //   {
-    //     "day": 29,
-    //     "title": "Tailwind CSS and Server-Side Rendering",
-    //     "text": "Implementing Tailwind CSS with server-side rendering."
-    //   },
-    //   {
-    //     "day": 30,
-    //     "title": "Final Project Showcase",
-    //     "text": "Showcasing and sharing your final Tailwind CSS projects."
-    //   }
-    // ]
+    syllabus: [
+      {
+        title: "Tailwind Basics",
+        description: "Understand the basics of Tailwind CSS, covering layout, spacing, components, and transitions.",
+        includes: [
+          { title: "Tailwind Basics - Layout, Spacing", description: "Learn foundational concepts of layout and spacing in Tailwind CSS." },
+          { title: "Tailwind Components - Flexbox, Grid, Responsive Classes, Cards, Badges", description: "Explore Tailwind components, including flexbox, grid, responsive classes, cards, and badges." },
+          { title: "Tailwind Transitions", description: "Understand transitions and animations in Tailwind CSS." },
+          { title: "Tailwind Basics - Layout, Spacing", description: "Revisit Tailwind basics related to layout and spacing." },
+          { title: "Creating a Landing Page", description: "Apply Tailwind CSS concepts to create a landing page project." },
+          { title: "Projects with Light/Dark Modes", description: "Implement light and dark modes in Tailwind CSS projects." },
+        ],
+      },
+    ]
   },
 ]

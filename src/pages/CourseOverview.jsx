@@ -18,13 +18,13 @@ const CourseOverview = () => {
             <Learn/> 
             <PracticeProject/>
             <AboutOverview/>
-            <ProjectInThis/>
+            {/* <ProjectInThis/> */}
         </div>
         <div className='' >
-            <Review/>
+            {/* <Review/> */}
         </div>
         <div className='w-[80%]  mx-auto'>
-            <FAQ/>
+            {/* <FAQ/> */}
         </div>
         <Footer/>
     </>

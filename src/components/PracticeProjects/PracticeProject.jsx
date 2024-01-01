@@ -20,32 +20,33 @@ const PracticeProject = () => {
     },[id])
   return (
     <>
-        <div className="flex flex-col mt-[7.5rem] gap-3 lg:flex-row ">
-            {
-                codecamp?.map((item, index) => (
-                    <Fragment key={index}>
-                        <Card img={icons[index]} heading={item.title} text={item.description} />
-                        {(index === 0 || index === 1) && (
+        <div className="pt-24 md:pt-15 lg:pb-11 px-9 md:px-1">
+            <div className="border-gradient max-w-screen-xl flex flex-col lg:flex-row  gap-3 mx-auto p-1 ">
+                {codecamp?.map((item, index) => (
+                    
+                    <React.Fragment key={index}>
+                        <Card icon={icons[index]} heading={item.title} text={item.description} />
+                        {( index === 0 || index === 1 ) && (
                             <div className="h-[2px] my-10 bg-gradient-to-r lg:my-0 lg:w-[2px] lg:h-auto lg:bg-gradient-to-b from-[#d7cea500] via-[#d7cea5] to-[#d7cea500]"></div>
                         )}
-                    </Fragment>
-                ))
-            }
-        </div>
+                    </React.Fragment>
+                ))}
+            </div>
+        </div>    
     </>
   )
 }
 
 export default PracticeProject
 
-const Card = ({ img, heading, text }) => {
+const Card = ({ icon, heading, text }) => {
     return (
         <div className="px-2">
-            <img src={img} className='w-' alt="" />
-            <h1 className="mt-6 text-4xl text-font font-bold text-[#EDF1E4]">
-                {heading}
-            </h1>
-            <p className="mt-5 font-dm-sans text-lg text-[#D7CEA5]">{text}</p>
+            <img className='h-[4rem] w-[4rem] md:h-[4.5rem] md:w-[4.5rem]' src={icon} alt="" />
+            <h1 className="mt-5 text-3xl md:text-4xl header font-extrabold text-[#EDF1E4]">{heading}</h1>
+            <p className="mt-5 md:mt-8 leading-7 md:leading-10 text-sm md:text-base text-[#D7CEA5] lg:max-w-[500px]">
+                {text}
+            </p>
         </div>
     );
 };
