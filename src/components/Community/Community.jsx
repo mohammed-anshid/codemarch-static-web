@@ -51,7 +51,7 @@ function Community() {
                                         </div>
                                     </div>
                                     <div className='hidden  md:block'>
-                                        <p className='gradient-underline mt-2 md:mt-6 lg:mt-6 font-bold leading-[55px] text-secondaryHover text-3xl md:text-4xl lg:text-4xl'>1,000+ Members</p>
+                                        <p className='gradient-underline mt-2 md:mt-6 lg:mt-6 font-bold leading-[55px] text-secondaryHover text-3xl md:text-4xl lg:text-4xl'>2,000+ Members</p>
                                         <div className='mt-8'>
                                             <a href="https://discord.gg/7g9WddcyKt" className='cursor-pointer'>
                                                 <img className='h-10 md:h-11 lg:h-14' src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689059414/Discord-button_rkohcu.svg" alt="" />
@@ -60,7 +60,7 @@ function Community() {
                                     </div>
                                     <div className='block md:hidden lg:hidden'>
                                         <button className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[2.7rem] justify-center rounded-[6px]">
-                                            Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>1,000+ Members</span>
+                                            Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>2,000+ Members</span>
                                         </button>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@ function Community() {
                                         </div>
                                     </div>
                                     <div className='hidden  md:block'>
-                                        <p className='gradient-underline mt-2 md:mt-6 lg:mt-6 font-bold leading-[55px] text-secondaryHover text-3xl md:text-4xl lg:text-4xl'>50,000 Followers</p>
+                                        <p className='gradient-underline mt-2 md:mt-6 lg:mt-6 font-bold leading-[55px] text-secondaryHover text-3xl md:text-4xl lg:text-4xl'>60,000 Followers</p>
                                         <div className='mt-8'>
                                             <a href="https://twitter.com/codemarch" className='cursor-pointer'>
                                                 <img className='h-10 md:h-11 lg:h-14' src="https://res.cloudinary.com/dbb0ncoht/image/upload/v1689059414/Twitter-button_zfn2v9.svg" alt="" />
@@ -94,7 +94,7 @@ function Community() {
                                     </div>
                                     <div className='block md:hidden lg:hidden'>
                                         <button className="btn text-[12.3px] flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[2.7rem] justify-center rounded-[6px]">
-                                            View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>50,000+ Followers</span>
+                                            View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>60,000+ Followers</span>
                                         </button>
                                     </div>
                                 </div>

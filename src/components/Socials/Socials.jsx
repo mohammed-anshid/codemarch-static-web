@@ -41,13 +41,13 @@ const Socials = () => {
                                             </p>
                                             <div className='social-buttons mx-1 hidden lg:block'>
                                                 <button className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
-                                                    Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>1,000+ Members</span>
+                                                    Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>2,000+ Members</span>
                                                 </button>
                                             </div>
                                         </div>
                                     </div> 
                                     <button className="btn lg:hidden secondaryButton flex items-center mt-6 font-semibold sm:mx-5 bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full text-sm md:text-[16px] h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
-                                        Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium text-sm lg:text-base'>1,000+ Members</span>
+                                        Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium text-sm lg:text-base'>2,000+ Members</span>
                                     </button>
                                 </div>
                             </div>
@@ -69,13 +69,13 @@ const Socials = () => {
                                             </p>
                                             <div className='social-buttons mx-1 hidden lg:block'>
                                                 <button className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
-                                                    View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>50,000+ Followers</span>
+                                                    View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>60,000+ Followers</span>
                                                 </button>
                                             </div>
                                         </div>
                                     </div> 
                                     <button className="btn lg:hidden secondaryButton flex items-center mt-6 font-semibold sm:mx-5 bg-gradient-to-b  from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full text-sm md:text-[16px] h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
-                                        View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium text-sm lg:text-base'>50,000+ Followers</span>
+                                        View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium text-sm lg:text-base'>60,000+ Followers</span>
                                     </button>
                                 </div>
                             </div>
