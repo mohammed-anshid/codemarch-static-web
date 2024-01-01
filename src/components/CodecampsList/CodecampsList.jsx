@@ -50,9 +50,24 @@ const CodecampsList = () => {
                                             <p className="text-[17px] md:text-xl text-font mt-3 md:mt-4 font-normal leading-32 tracking-wide text-left text-[#3D8361]">
                                                 {item.description.substring(0, 145) + '.'}
                                             </p>
-                                        </div>                                                              
+                                        </div>    
 
-                                        <div className="flex items-center gap-2 pt-5 md:pt-10 mt-7">
+                                        {/* originall */}
+                                        {/* <div className="flex items-center gap-2 pt-1 md:pt-10 mt-7">
+                                            <div className="flex -space-x-5 md:-space-x-4 ">
+                                                <div className="samllbox"></div>
+                                                <div className="samllbox"></div>
+                                                <div className="samllbox"></div>
+                                                <div className="samllbox"></div>              
+                                                
+                                            </div>
+                                            <div className="flex justify-between">
+                                                <h4 className="textStyle ml-5  w-20"></h4>
+                                                <h4 className="textStyle ml-2  w-20"></h4>
+                                            </div>
+                                            
+                                        </div> */}
+                                        <div className="flex items-center gap-2 pt-1 md:pt-3 mt-7">
                                             <div className="flex -space-x-5 md:-space-x-4 ">
                                                 <div className="samllbox"></div>
                                                 <div className="samllbox"></div>
@@ -66,7 +81,11 @@ const CodecampsList = () => {
                                             </div>
                                             
                                         </div>
-                                  
+                                        <div>
+                                            <button className="btn flex mx-auto cursor-pointer items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-full h-10 md:h-14 justify-center rounded-[9px]">
+                                                View<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
+                                            </button>
+                                        </div>
                                 </div>
                             </div>
                         </div>
