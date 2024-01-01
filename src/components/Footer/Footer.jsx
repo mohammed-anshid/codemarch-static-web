@@ -13,7 +13,7 @@ function Footer() {
                     <a href="" className="flex items-center" >
                         <img src={footerLogo} className="h-10  md:h-12 lg:h-13 mx-auto" alt="FlowBite Logo" />
                     </a>
-                    <button className='className="flex items-center w-full'>
+                    <button className='className="flex hidden lg:block items-center w-full'>
                         <img src={footerButton} className="h-11 md:h-10 mt-9 md:mt-7 hover:p mx-auto" alt="FlowBite Logo" />
                     </button>
                 </div>
