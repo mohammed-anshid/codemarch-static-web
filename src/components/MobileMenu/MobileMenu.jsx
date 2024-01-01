@@ -99,7 +99,7 @@ export default MobileMenu
 
 const menuItems = [
     { icon: <MdSpaceDashboard />, text: 'Dashboard', href:'/'},
-    { icon: <DiCodeigniter />, text: 'Codecamps', href:'/codecamp'},
+    { icon: <DiCodeigniter />, text: 'Codecamps', href:'/codecamps'},
     { icon: <FaCode />, text: 'Courses', href:'/'},
     { icon: <IoPerson />, text: 'Profile', href:'/'},
     { icon: <IoLogOut />, text: 'Logout', href:''},

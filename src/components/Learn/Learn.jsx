@@ -25,27 +25,27 @@ const Learn = () => {
         <div
             className='rounded-lg flex flex-col-reverse gap-8 md:gap-[5.5rem] pt-40 md:flex-row'
         >
-        <div className='text-sm md:w-[70%] flex flex-col justify-between space-y-3'>
-            <h1 className={`text-secondaryHover text-[3.2rem] text-font tracking-tight font-extrabold leading-none  forHeadingBigScreen`}>
-                { codecamp.title}
-            </h1>
-            <p className='leading-9 font-dm-sans text-sm lg:text-lg  text-[#D7CEA5]' style={{lineHeight:'30px'}}>
-                {codecamp.description.substring(0, 100) + '...'}
-            </p>
-            <div className='pb-2 flex flex-col text-font  font-bold'>
-                {
-                    codecamp.highlights.map((item,index)=>{
-                        return (
-                            <Points text={item} />
-                        )
-                    })
-                }
+            <div className='text-sm md:w-[70%] flex flex-col justify-between space-y-3'>
+                <h1 className={`text-secondaryHover text-[3.2rem] text-font tracking-tight font-extrabold leading-none  forHeadingBigScreen`}>
+                    { codecamp.title}
+                </h1>
+                <p className='leading-9 font-dm-sans text-sm lg:text-lg  text-[#D7CEA5]' style={{lineHeight:'30px'}}>
+                    {codecamp.description.substring(0, 100) + '...'}
+                </p>
+                <div className='pb-2 flex flex-col text-font  font-bold'>
+                    {
+                        codecamp.highlights.map((item,index)=>{
+                            return (
+                                <Points text={item} />
+                            )
+                        })
+                    }
+                </div>
+                <button disabled className="text-base bg-gradient-to-b from-[#EDF1E4] to-[#D7CEA5] w-full py-4 rounded-lg font-bold">
+                    Coming Soon  <span><img src='' alt="" /></span>
+                </button>
             </div>
-            <button disabled className="text-base bg-gradient-to-b from-[#EDF1E4] to-[#D7CEA5] w-full py-4 rounded-lg font-bold">
-                Coming Soon  <span><img src='' alt="" /></span>
-            </button>
-        </div>
-        <div className="w-full h-[190px] md:h-[430px] bg-slate-500 rounded-2xl bg-cover" style={{ backgroundImage: codecamp ? `url(${codecamp.image})` : 'none' }}></div>
+            <div className="w-full h-[190px] md:h-[430px] bg-slate-500 rounded-2xl bg-cover" style={{ backgroundImage: codecamp ? `url(${codecamp.image})` : 'none' }}></div>
             
         </div>
     </>
