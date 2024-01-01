@@ -58,7 +58,7 @@ const MobileMenu = ({ state, setState }) => {
             <motion.div {...framerSidebarPanel} className="top-0 right-0 z-40 w-[230px] md:w-[265px] bg-[#001713]  p-6 backdrop-blur-sm text-white fixed h-full ">
                 <div className='w-full flex justify-between pt-3'>
                     <div className='flex gap-4'>
-                        <img class="w-9 h-9 rounded" src="https://res.cloudinary.com/ddb081sch/image/upload/v1702445268/cld-sample-5.jpg" alt="Default avatar"/>
+                        {/* <img class="w-9 h-9 rounded" src="https://res.cloudinary.com/ddb081sch/image/upload/v1702445268/cld-sample-5.jpg" alt="Default avatar"/> */}
                         <h3 className='self-center text-xl font-medium'>Hello!</h3>
                     </div>
                     <button 

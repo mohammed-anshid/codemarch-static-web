@@ -8,6 +8,7 @@ import avatar from "../../assets/images/avatar.svg";
 import vector from "../../assets/images/Vector-Arrow.svg";
 import approve from "../../assets/images/Vector (1).png";
 import { FaArrowRight } from "react-icons/fa";
+import tickIcon from '../../assets/tickIcon.svg'
 
 function Courses() {
   useEffect(() => {
@@ -26,9 +27,11 @@ function Courses() {
     };
   }, []);
   const cards = [
-    { text:'Frontend Development', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',image:`${image1}`},
-    { text:'Programming Languages', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',image:`${image2}`}
+    { text:'Frontend Development', description:['Master HTML, CSS, JavaScript & React.','Responsive Web design','Real-world projects and portfolio building'],image:`${image1}`},
+    { text:'Programming Languages', description: ['Basics to advanced coding concepts','Learn JavaScript and more','Problem-solving and coding challenges'],image:`${image2}`}
   ];
+
+  const data = ['Develop a unique developer identity','Online presence and networking strategies','Portfolio creation and interview skills']
   return (
     <div className="container px-[2.1rem] md:px-[4rem] lg:px-[8.5rem] mx-auto mb-11 pt-28">
       <div className="overflow-x-auto">
@@ -43,9 +46,18 @@ function Courses() {
                     <div class="title font-bold mb-2 mx-3 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
                       <p className="title">{card.text}</p>
                     </div>
-                    <p class="description lg:text-lg font-light md:text-sm mt-5 lg:mx-3 mx-2 text-center text-secondaryText">
-                      {card.description}
-                    </p>
+                    <div class="description lg:text-lg font-light md:text-sm mt-5 lg:mx-3 mx-2  text-secondaryText">
+                      {
+                        card?.description?.map((item )=> (
+                          <div className="flex my-1">
+                            <img src={tickIcon} alt="" className="w-4 h-4 lg:w-5 lg:h-5 self-center"  width={10} height={10} />
+                            <h3 className="text-sm font-medium text-font lg:text-xl  bg-gradient-to-b from-[#EDF1E4] to-[#D7CEA5] bg-clip-text text-transparent ml-4 ">
+                              {item}
+                            </h3>
+                          </div>
+                        ))
+                      }
+                    </div>
                   </div>
                   <div class="px-6 pt-6 pb-3 mb-3 text-center">
                     {/* <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-52 md:w-52 h-10 md:h-12 justify-center mt-6 md:mt-9 lg:mt-10 rounded-[9px]">
@@ -85,12 +97,21 @@ function Courses() {
                 <div className="title font-bold mb-2 text-center text-3xl md:text-2xl lg:text-5xl text-secondaryHover">
                   Bulding <br /> Your Brand
                 </div>
-                <p class="description lg:text-lg font-light md:text-sm mt-5 mx-2 lg:mx-3 text-center text-secondaryText">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p class="description lg:text-lg font-light md:text-sm mt-6 mx-2 lg:mx-3  text-secondaryText">
+                  {
+                    data?.map((item)=> (
+                      <div className="flex my-1">
+                        <img src={tickIcon} alt="" className="w-4 h-4 lg:w-5 lg:h-5 self-center"  width={10} height={10} />
+                        <h3 className="text-sm font-medium text-font lg:text-xl  bg-gradient-to-b from-[#EDF1E4] to-[#D7CEA5] bg-clip-text text-transparent ml-4 ">
+                          {item}
+                        </h3>
+                      </div>
+
+                    ))
+                  }
                 </p>
               </div>
-              <div class="px-6 pt-6 pb-3 mb-3 text-center">
+              <div class="px-6 pt-7 pb-5 mb-3 text-center">
                 <button>
                   <img className="h-12" src={button} alt="" />
                 </button>
