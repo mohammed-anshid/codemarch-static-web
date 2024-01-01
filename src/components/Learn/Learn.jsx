@@ -35,7 +35,9 @@ const Learn = () => {
                 <div className='pb-2 flex flex-col text-font  font-bold'>
                     {
                         codecamp.highlights.map((item,index)=>{
+                            console.log(item)
                             return (
+                                
                                 <Points text={item} />
                             )
                         })

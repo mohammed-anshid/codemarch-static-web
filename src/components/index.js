@@ -263,7 +263,7 @@ export const codecamps = [
     type: "UPCOMING",
     title: "100 Days of JavaScript Mastery",
     description: "Embark on a comprehensive journey through JavaScript with our 100-day program. From basics to advanced topics, transform your coding skills and become proficient in JavaScript.",
-    highlights: [
+    whatYoullGet: [
       "In-Depth Learning: Delve into every aspect of JavaScript, from basics to complex concepts.",
       "Project-Based Approach: Apply your learning in real-world scenarios through weekly projects.",
       "Weekly 1:1 Expert Review: Receive personalized guidance and feedback from experienced developers to enhance your learning and development."
