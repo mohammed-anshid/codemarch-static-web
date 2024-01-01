@@ -1,7 +1,8 @@
 import React from 'react';
 import './codecampsList.css';
-import { codecamps } from '..';
 import { useNavigate } from 'react-router-dom';
+
+import { codecamps } from '..';
 
 const CodecampsList = () => {
 

@@ -205,7 +205,7 @@ export const featuresCard = [
 export const codecamps = [
 
   { 
-    id:1,
+    id: 'html-cdmp-1',
     image:htmlCamp,
     type: "UPCOMING",
     title: "30-Day Web Design CodeCamp",
@@ -258,7 +258,7 @@ export const codecamps = [
   },
 
   {
-    id:2,
+    id:'js-cdmp-2',
     image:jsCamp,
     type: "UPCOMING",
     title: "100 Days of JavaScript Mastery",
@@ -370,7 +370,7 @@ export const codecamps = [
   },
 
   {
-    id:3,
+    id:'react-cdmp-3',
     image:reactCamp,
     type: "UPCOMING",
     title: "30 Days to React Mastery",
@@ -446,7 +446,7 @@ export const codecamps = [
   },
 
   {
-    id:4,
+    id:'tailwind-cdmp-4',
     image:tailwindCamp,
     type: "UPCOMING",
     title: "30 Days of Tailwind CSS CodeCamp",
