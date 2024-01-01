@@ -30,13 +30,13 @@ function App() {
           </Suspense>
         }/> */}
 
-        <Route path='/codecamp' element={
+        <Route path='/codecamps' element={
           <Suspense fallback={<Loader />}>
             <CodeCamp/>
           </Suspense>
         }/>
 
-        <Route path='/course' element={
+        <Route path='/codecamp/:id' element={
           <Suspense fallback={<Loader />}>
             <CourseOverview/>
           </Suspense>

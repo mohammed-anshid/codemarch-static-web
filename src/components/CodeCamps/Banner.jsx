@@ -25,7 +25,7 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <div className="faded faded-top faded-bottom faded-left bg-gradient-to-r shadow-inner  from-transparent via-[#002b23] to-transparent mt-10">
+                <div className="faded faded-top faded-bottom faded-left bg-gradient-to-r overflow-x-auto shadow-inner  from-transparent via-[#002b23] to-transparent mt-10">
                     <img src={BannerImg} alt="" className="fade-image " />
                 </div>
             </div>
