@@ -1,22 +1,36 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
+import React, { Fragment,useState } from 'react';
 import './NavBar.css'
 import logo from '../../assets/cm-logo-1 1.svg';
 import Button from '../../assets/Property 1=Component 2.svg';
+import { motion,AnimatePresence } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
 
+//Components
+import MyModal from '../Modal/MyModal';
+import SignupModal from '../Modal/SignupModal';
+import MobileMenu from '../MobileMenu/MobileMenu';
+
+
 function NavBar() {
-//   const [state, setState] = useState(false);
+  const [state, setState] = useState('');
   const [navbar, setNavbar] = useState(false);
+  const [sidebar, setSidebar] = useState(false);
 
   const changeBackground = () => {
     if (window.scrollY > 19) {
         setNavbar(true)
+        handleOnClose();
     } else {
         setNavbar(false)
     }
   };
   window.addEventListener("scroll", changeBackground);
+
+  const handleOnClose = () => setState('');
+
+  const user = true
+
 
   return (
     <>
@@ -30,9 +44,19 @@ function NavBar() {
                     <a href="" className="md:inline sm:inline xm:inline lg:hidden xl:hidden">
                         <img src={logo} className="h-6 md:h-8 lg:h-8" alt=""/>
                     </a> 
-                    <button className="btn flex items-center font-medium text-secondaryHover bg-[#3D836166] w-28 h-9 justify-center rounded-[6px]">
-                        Sign up<span className="ml-1 text-xs"><FaArrowRight/></span>
-                    </button>
+                    { !user ?
+                        <Fragment>
+                            <button className="btn flex items-center font-medium text-secondaryHover bg-[#3D836166] w-28 h-9 justify-center rounded-[6px]">
+                                Sign up<span className="ml-1 text-xs"><FaArrowRight/></span>
+                            </button>
+                        </Fragment>
+                        :
+                        <button
+                            onClick={()=>setSidebar(!sidebar)}
+                        >
+                            <img class="w-9 h-9 rounded" src="https://res.cloudinary.com/ddb081sch/image/upload/v1702445256/samples/two-ladies.jpg" alt="Default avatar"></img>
+                        </button>
+                    }
                 </div>
             </nav>
 
@@ -44,12 +68,26 @@ function NavBar() {
                         <img src={logo} className="h-6 md:h-8 mr-3" alt="Flowbite Logo"/>
                     </a>
                     <div className="flex md:order-2">
-                        <button className="hidden sm:hidden xs:hidden lg:inline-block md:inline-block">
-                            <img className="w-36" src={Button} alt="" />
+                        {!user ?
+                            <Fragment>
+                                <button 
+                                    onClick={() => setState('signup')}
+                                    className="hidden sm:hidden xs:hidden lg:inline-block md:inline-block">
+                                    <img className="w-36" src={Button} alt="" />
+                                </button>
+                                <button  
+                                    onClick={() => setState('signup')}
+                                    className="btn inline-flex md:hidden items-center font-medium text-secondaryHover  bg-gradient-to-b from-[#011F1A] via-[#011F1A] to-[#01322937] border-[#EAEDDC66] border-[1px] w-28 h-[2.3rem] md:w-36 md:h-[2.7rem] justify-center rounded-[6px]">
+                                    Sign up<span className="ml-1 text-xs"><FaArrowRight/></span>
+                                </button>
+                            </Fragment>
+                            :
+                            <button
+                            onClick={()=>setSidebar(!sidebar)}
+                        >
+                            <img class="w-10 h-10 rounded" src="https://res.cloudinary.com/ddb081sch/image/upload/v1702445256/samples/two-ladies.jpg" alt="Default avatar"></img>
                         </button>
-                        <button className="btn inline-flex md:hidden items-center font-medium text-secondaryHover  bg-gradient-to-b from-[#011F1A] via-[#011F1A] to-[#01322937] border-[#EAEDDC66] border-[1px] w-28 h-[2.3rem] md:w-36 md:h-[2.7rem] justify-center rounded-[6px]">
-                            Sign up<span className="ml-1 text-xs"><FaArrowRight/></span>
-                        </button>
+                        }
                     </div>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" >
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border md:flex-row md:space-x-20 md:mt-0 md:border-0">
@@ -63,47 +101,20 @@ function NavBar() {
                                 <a href="#"  className="block py-2 pl-4 pr-4 text-secondaryText  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondaryHover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Community</a>
                             </li>
                         </ul>
-                    </div>
+                    </div> 
                 </div>
+                
+                {state === 'signin' &&  <MyModal onClose={handleOnClose} setState={setState}/> }
+                {state === 'signup' &&  <SignupModal onClose={handleOnClose} setState={setState} /> }
 
-                {/* <div className={`${state ? 'block' : 'hidden'} sm:hidden`} id="mobile-menu">
-                    <div className="top-0 right-0 w-[190px] bg-[#082d26] text-white fixed h-full">
-                        <button onClick={()=>setState(!state)} type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
-                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-                            </svg>
-                            <span class="sr-only">Close menu</span>
-                        </button>    
-                        //Mobile navigation links// 
-                        <div class="py-4 overflow-y-auto mt-4">
-                            <ul class="space-y-2 font-medium text-center">
-                                <li>
-                                    <a href="#" class="flex p-2 m-4 text-secondaryText hover:text-secondaryHover rounded-lg dark:text-secondaryHover hover:bg-[#001e18] dark:hover:bg-secondaryHover group">
-                                        <span class="ml-3 text-center">Skills</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex p-2 m-4 text-secondaryText hover:text-secondaryHover rounded-lg dark:text-secondaryHover hover:bg-[#001e18] dark:hover:bg-secondaryHover group">
-                                        <span class="ml-3 text-center">Newsletter</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="flex p-2 m-4 text-secondaryText hover:text-secondaryHover rounded-lg dark:text-secondaryHover hover:bg-[#001e18] dark:hover:bg-secondaryHover group">
-                                        <span class="ml-3 text-center">Community</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <button className="">
-                                        <img className="w-[152px]" src={Button} alt="" />
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> */}
             </nav>
             )
         }
+
+        <AnimatePresence mode="wait" initial={false}>
+            { sidebar && <MobileMenu state={sidebar} setState={setSidebar}/> }
+        </AnimatePresence>
+        
     </>
   )
 }

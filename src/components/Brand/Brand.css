@@ -28,6 +28,11 @@
     transition: opacity 4s ease-in-out;
 }
 
+.fade-out-element {
+   
+    transition: opacity 2s ease-in;
+}
+
 .fade-in {
     opacity: 2;
 }

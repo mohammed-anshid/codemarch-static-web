@@ -12,6 +12,73 @@ body{
     font-weight: 700;
 }
 
+.text-font {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
 .btn {
     font-family: 'DM Sans', sans-serif;
+}
+
+.content-show::-webkit-scrollbar {
+    width: 5px; /* Adjust the width as needed */
+}
+  
+  /* Define scrollbar thumb (the draggable part) */
+.content-show ::-webkit-scrollbar-thumb {
+    background-color: #3D8361; /* Change the color to your preference */
+    border-radius: 6px; /* Adjust the border radius as needed */
+}
+
+
+
+
+/* //----// */
+
+.darkerGrotesque {
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.dmSans {
+    font-family: 'DM Sans', sans-serif;
+}
+
+.forBorderPadding {
+    padding: 2px;
+}
+
+.forBorderPaddingSmall {
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+}
+
+
+@media screen and (min-width: 760px) {
+    .forHeadingSmallScreen{
+        display: none;
+    }
+
+  }
+@media screen and (max-width: 760px) {
+    .forHeadingBigScreen{
+        display: none;
+    }
+  }
+
+
+.forScroll::-webkit-scrollbar {
+    height: 0px;
+    /* Adjust the width as needed */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+.forScroll::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+/* Customize the scrollbar track when hovering over it */
+.forScroll::-webkit-scrollbar-track:hover {
+    background-color: #555;
 }

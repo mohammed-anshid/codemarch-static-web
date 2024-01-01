@@ -1,0 +1,94 @@
+@media screen and (max-width: 1377px) and (min-width: 1024px) {
+    .card-img {
+        @apply
+            w-[18rem] 
+            h-[10.35rem]
+    }
+
+    .resume-btn {
+        @apply
+            px-8
+            items-center
+    }
+
+    .codecamp-card {
+        @apply 
+            gap-x-10
+    }
+
+    .course-title {
+        @apply
+            text-[1.5rem]
+            mt-8
+    }
+
+
+}
+
+@media screen and (max-width: 1139px) and (min-width: 1024px) {
+    .title-card {
+        @apply
+            gap-x-2
+    }
+
+    .card-img {
+        @apply
+            w-[17rem] 
+            h-[9.7rem]
+    }
+
+    .codecamp-card {
+        @apply 
+            gap-x-4
+    }
+
+    .course-title {
+        @apply
+            text-[1.4rem]
+            mt-8
+            
+    }
+
+    .resume-btn {
+        @apply
+            px-7
+            items-center
+    }
+
+    .progress-text {
+        @apply
+            text-base
+    }
+}
+
+
+@media screen and (max-width: 915px) and (min-width: 768px) {
+    .card-img {
+        @apply
+            w-[14.4rem]
+            h-[8.28rem]
+    }
+
+    .codecamp-card {
+        @apply 
+            gap-x-3
+    }
+
+    .course-title {
+        @apply
+            text-[1.05rem]
+            
+    }
+
+    .resume-btn {
+        @apply
+            px-5
+            items-center
+            text-sm
+    }
+
+    .progress-text {
+        @apply
+            text-sm
+    }
+}

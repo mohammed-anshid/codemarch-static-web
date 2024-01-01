@@ -1,0 +1,27 @@
+.text-gradient {
+  background-image: linear-gradient(to bottom, #edf1e4, #d7cea5);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.email {
+  color: rgba(61, 131, 97, 1);
+}
+
+
+.forScroll::-webkit-scrollbar {
+  height: 0px;
+  /* Adjust the width as needed */
+}
+
+/* Customize the scrollbar thumb (the draggable part) */
+.forScroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+/* Customize the scrollbar track when hovering over it */
+.forScroll::-webkit-scrollbar-track:hover {
+  background-color: #555;
+}

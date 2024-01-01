@@ -1,0 +1,70 @@
+
+
+.custom-line-height {
+    line-height: 30px;
+}
+  
+
+    
+@media (max-width: 768px) {
+    /* For sm (small) screens and smaller */
+    .custom-line-height {
+        line-height: 30px; /* Set line height to 39px */
+    }
+}
+  
+@media (min-width: 769px) and (min-width: 1024px) {
+    /* For md (medium) screens */
+    .custom-line-height {
+        line-height: 45px; /* Set line height to 45px */
+    }
+}
+
+
+.text-gradient{
+    background-image: linear-gradient(to bottom, #EDF1E4, #D7CEA5); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+  
+  
+.dec{
+    color: rgba(215, 206, 165, 1);
+
+}
+
+
+.bootcamps::-webkit-scrollbar {
+    display: none;
+}
+  
+  
+  
+.buttonStyle {
+    background: linear-gradient(180deg, #011f1a 0%, #013229 232.5%);
+
+    @apply  
+        text-[#D7CEA5]
+        tracking-tight
+        rounded-lg 
+        absolute
+        top-3 
+        pl-5
+        pr-5
+        p-1 
+        left-3 
+        uppercase;
+}
+  
+  
+.samllbox {
+    background: linear-gradient(180deg, #001B16 0%, #001B16 100%),
+    linear-gradient(180deg, #EDF1E4 -101.67%, rgba(237, 241, 228, 0) 131.67%);
+    @apply mt-2 w-7 h-7 md:w-8 md:h-8 top-20 left-20 mb-3 border-2  border-gray-400 rounded-lg overflow-hidden;
+}
+  
+.textStyle{
+    color: rgba(215, 206, 165, 1);
+    @apply  text-[13px] font-normal leading-8 tracking-tighter text-left
+}  

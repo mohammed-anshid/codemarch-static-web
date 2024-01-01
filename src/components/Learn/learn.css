@@ -1,0 +1,23 @@
+/* 
+
+.learnJsContainer{
+    @apply  rounded-lg flex flex-col-reverse gap-8 md:gap-[5.5rem] pt-10 md:flex-row
+
+}
+.learnJsLeft {
+    @apply text-sm md:w-[70%] flex flex-col justify-between
+}
+.learnJsHeading{
+    @apply text-[#EDF1E4] text-[4rem] tracking-tight font-bold leading-none 
+
+}
+.learnJsParagaph{
+    @apply  leading-10 font-dm-sans text-sm lg:text-lg text-[#D7CEA5]
+}
+.learnJsPointContainer{
+    @apply pb-3 flex flex-col font-dm-sans font-bold
+}
+.learnJsHeadingSmall{
+    @apply text-[#EDF1E4] text-[3.5rem] tracking-tight font-bold  font-darker-grotesque 
+
+} */

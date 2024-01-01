@@ -1,0 +1,28 @@
+.disabled-btn {
+    color: rgba(215, 206, 165, .4);
+}
+
+@media screen and (max-width: 1377px) and (min-width: 1024px) {
+    .navigation {
+        
+        @apply
+            text-lg
+    }
+
+    .nav-main {
+        box-shadow: inset -10px 0 20px rgba(10, 57, 45, .5);;
+        @apply
+            gap-x-20
+    }
+
+    .option-component {
+        @apply
+            px-4
+            py-2
+    }
+
+    .soon-text {
+        @apply
+        text-base
+    }
+}

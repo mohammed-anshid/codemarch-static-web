@@ -1,0 +1,19 @@
+.accordion-bg {
+    background:linear-gradient(180deg, #10503F 0%, rgba(10, 57, 45, 0) 200%);
+}
+
+.checkbox {
+    background: linear-gradient(to bottom, rgba(61, 131, 97, 0.6), #10503F);
+
+}
+
+.checkbox:checked {
+    background:linear-gradient(to bottom, #edf1e4, #D7CEA5);
+    @apply
+        border-[#3D8361] 
+}
+
+.dot {
+    @apply
+        text-base
+}

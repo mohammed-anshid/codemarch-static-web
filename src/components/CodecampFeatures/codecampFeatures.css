@@ -1,0 +1,22 @@
+/* Custom Slick Dots*/
+
+.ft-slick__dots--custom {
+    display: flex;
+    align-items: center;
+    bottom: -50px;
+}
+  
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #D7CEA5; /* Default dot color */
+    margin: 0 5px;
+}
+  
+.slick-active .dot {
+    background-color: #EDF1E4;
+    width: 12px; 
+    height: 12px;/* Active dot color */
+}
+
