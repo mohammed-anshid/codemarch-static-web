@@ -17,9 +17,9 @@ const Socials = () => {
                             <span>Everywhere</span>
                         </h4>
                         <p className="text-sm sm:text-xl hidden md:block lg:block text-secondaryHover my-7 custom-line-height">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            Join the codemarch community: a place where coding dreams turn into reality.
                             <br className="hidden sm:block md:hidden lg:block"/>
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Connect, learn, and grow with us as we navigate the exciting world of tech together!
                         </p>
                     </div>
                 </div>

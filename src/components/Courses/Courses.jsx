@@ -9,8 +9,12 @@ import vector from "../../assets/images/Vector-Arrow.svg";
 import approve from "../../assets/images/Vector (1).png";
 import { FaArrowRight } from "react-icons/fa";
 import tickIcon from '../../assets/tickIcon.svg'
+import { useNavigate } from "react-router-dom";
 
 function Courses() {
+
+  const navigate = useNavigate();
+
   useEffect(() => {
     // Initialize ScrollReveal with your desired configuration
     ScrollReveal().reveal('.container', {
@@ -26,6 +30,12 @@ function Courses() {
       ScrollReveal().destroy();
     };
   }, []);
+
+  //temporarily function 
+  const toNavigate  = () => {
+    navigate('/codecamps')
+  }
+
   const cards = [
     { text:'Frontend Development', description:['Master HTML, CSS, JavaScript & React.','Responsive Web design','Real-world projects and portfolio building'],image:`${image1}`},
     { text:'Programming Languages', description: ['Basics to advanced coding concepts','Learn JavaScript and more','Problem-solving and coding challenges'],image:`${image2}`}
@@ -63,7 +73,7 @@ function Courses() {
                     {/* <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-52 md:w-52 h-10 md:h-12 justify-center mt-6 md:mt-9 lg:mt-10 rounded-[9px]">
                       Explore<span className="ml-1 md:ml-[4px] text-xs md:text-[1.1rem]"><FaArrowRight/></span>
                     </button> */}
-                    <button>
+                    <button onClick={toNavigate}>
                       <img className="h-12" src={button} alt="" />
                     </button>
                   </div>
@@ -112,7 +122,7 @@ function Courses() {
                 </p>
               </div>
               <div class="px-6 pt-7 pb-5 mb-3 text-center">
-                <button>
+                <button onClick={toNavigate}>
                   <img className="h-12" src={button} alt="" />
                 </button>
                 {/* <button className="btn flex mx-auto items-center text-center font-bold text-[#01221C] md:text-[1.3rem] bg-gradient-to-b from-brandText to-brandHover w-52 md:w-52 h-10 md:h-12 justify-center mt-6 md:mt-9 lg:mt-10 rounded-[9px]">

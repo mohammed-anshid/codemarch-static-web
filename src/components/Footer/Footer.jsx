@@ -102,7 +102,7 @@ function Footer() {
             </div>
             <hr className="my-6 border-transparent sm:mx-auto dark:border-transparent lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between text-center">
-                <span className="text-sm lg:text-base text-[#3D8361] sm:text-center dark:text-[#3D8361]">© Copyrights 2023, <a href="https://codemarch.co/" className="hover:underline">Codemarch™</a>. All Rights Reserved.
+                <span className="text-sm lg:text-base text-[#3D8361] sm:text-center dark:text-[#3D8361]">© Copyrights 2024, <a href="https://codemarch.co/" className="hover:underline">Codemarch™</a>. All Rights Reserved.
                 </span>
                 {/* <div className="flex mt-4 space-x-7 justify-center sm:mt-0">
                     <a href="https://discord.gg/nqAPUVuZtP" className="text-gray-500 hover:text-[#D7CEA5] dark:hover:text-white dark:text-gray-400">
