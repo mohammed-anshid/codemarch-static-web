@@ -24,11 +24,11 @@ function App() {
     <div className="App">
       <Routes>
 
-        <Route path='/dashboard/*' element={
+        {/* <Route path='/dashboard/*' element={
           <Suspense fallback={<Loader />}>
             <Dashboard/>
           </Suspense>
-        }/>
+        }/> */}
 
         <Route path='/codecamp' element={
           <Suspense fallback={<Loader />}>
@@ -42,7 +42,7 @@ function App() {
           </Suspense>
         }/>
 
-        <Route path='/content' element={
+        {/* <Route path='/content' element={
           <Suspense fallback={<Loader />}>
             <CourseContent/>
           </Suspense>
@@ -52,7 +52,7 @@ function App() {
           <Suspense fallback={<Loader />}>
             <Account/>
           </Suspense>
-        }/>
+        }/> */}
       
         <Route
           path='/'

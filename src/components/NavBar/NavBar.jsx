@@ -38,10 +38,10 @@ function NavBar() {
         { navbar ?(
             <nav className='fixed z-20 rounded-[15px] lg:pl-10 px-2 py-2 border mt-10 border-[#EAEDDC] left-1/2 -translate-x-1/2 border-opacity-40 bg-[#002B23] navbar'>
                 <div className='flex justify-between items-center sm:gap-7 md:gap-16 w-[20rem] md:w-[30rem] lg:w-[36rem]'>
-                    <a href="#" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover hidden md:hidden sm:hidden xm:hidden lg:inline xl:inline ">Skills</a>
-                    <a href="#" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover hidden md:hidden sm:hidden xm:hidden lg:inline xl:inline ">Newsletter</a>
-                    <a href="#" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover hidden md:hidden sm:hidden xm:hidden lg:inline xl:inline ">Community</a>
-                    <a href="" className="md:inline sm:inline xm:inline lg:hidden xl:hidden">
+                    <a href="/" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover hidden md:hidden sm:hidden xm:hidden lg:inline xl:inline ">Home</a>
+                    <a href="/codecamp" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover hidden md:hidden sm:hidden xm:hidden lg:inline xl:inline ">codecamps</a>
+                    <a href="" className="text-secondaryText lg:text-[1rem] mx-2 text-[.9rem] hover:text-secondaryHover hidden md:hidden sm:hidden xm:hidden lg:inline xl:inline ">Courses</a>
+                    <a href="/" className="md:inline sm:inline xm:inline lg:hidden xl:hidden">
                         <img src={logo} className="h-6 md:h-8 lg:h-8" alt=""/>
                     </a> 
                     { !user ?
@@ -92,13 +92,13 @@ function NavBar() {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" >
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border md:flex-row md:space-x-20 md:mt-0 md:border-0">
                             <li>
-                                <a href="#" className="block py-2 pl-4 pr-4 text-secondaryText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondaryHover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
+                                <a href="/" className="block py-2 pl-4 pr-4 text-secondaryText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondaryHover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 pl-4 pr-4 text-secondaryText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondaryHover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Newsletter</a>
+                                <a href="/codecamp" className="block py-2 pl-4 pr-4 text-secondaryText rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondaryHover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Codecamps</a>
                             </li>
                             <li>
-                                <a href="#"  className="block py-2 pl-4 pr-4 text-secondaryText  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondaryHover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Community</a>
+                                <a href="/"  className="block py-2 pl-4 pr-4 text-secondaryText  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondaryHover md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Courses</a>
                             </li>
                         </ul>
                     </div> 
