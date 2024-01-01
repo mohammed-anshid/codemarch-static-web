@@ -53,14 +53,14 @@ const CodecampsList = () => {
 
                                         <div className="flex items-center gap-2 pt-5 md:pt-10 mt-7">
                                             <div className="flex -space-x-5 md:-space-x-4 ">
+                                                {/* <div className="samllbox"></div>
                                                 <div className="samllbox"></div>
                                                 <div className="samllbox"></div>
-                                                <div className="samllbox"></div>
-                                                <div className="samllbox"></div>              
+                                                <div className="samllbox"></div>               */}
                                             </div>
                                             <div className="flex justify-between">
-                                                <h4 className="textStyle ml-5  w-20">Students</h4>
-                                                <h4 className="textStyle ml-2  w-20">{item.time}</h4>
+                                                {/* <h4 className="textStyle ml-5  w-20">Students</h4>
+                                                <h4 className="textStyle ml-2  w-20">{item.time}</h4> */}
                                             </div>
                                         </div>
                                   
