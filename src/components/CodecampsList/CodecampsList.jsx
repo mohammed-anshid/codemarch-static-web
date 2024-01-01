@@ -44,10 +44,10 @@ const CodecampsList = () => {
 
                                         <div className='m-1 h-[155px] md:h-[190px]'>
                                             <h1 className="mt-3 md:mt-5 text-[#D7CEA5] text-lg font-medium leading-32 tracking-tight text-left">
-                                            {item.title}
+                                                {item.title}
                                             </h1>
                                             <p className="text-[17px] md:text-xl text-font mt-3 md:mt-4 font-normal leading-32 tracking-wide text-left text-[#3D8361]">
-                                            {item.description.substring(0, 145) + '...'}
+                                                {item.description.substring(0, 145) + '.'}
                                             </p>
                                         </div>                                                              
 

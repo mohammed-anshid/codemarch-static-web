@@ -30,7 +30,7 @@ const Learn = () => {
                     { codecamp.title}
                 </h1>
                 <p className='leading-9 font-dm-sans text-sm lg:text-lg  text-[#D7CEA5]' style={{lineHeight:'30px'}}>
-                    {codecamp.description.substring(0, 100) + '...'}
+                    {codecamp.description.substring(0, 100) + '.'}
                 </p>
                 <div className='pb-2 flex flex-col text-font  font-bold'>
                     {
