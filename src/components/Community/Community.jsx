@@ -59,7 +59,7 @@ function Community() {
                                         </div>
                                     </div>
                                     <div className='block md:hidden lg:hidden'>
-                                        <button className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[2.7rem] justify-center rounded-[6px]">
+                                        <button onClick={()=>window.location.href='https://discord.gg/7g9WddcyKt'} className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[2.7rem] justify-center rounded-[6px]">
                                             Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>2,000+ Members</span>
                                         </button>
                                     </div>
@@ -93,7 +93,7 @@ function Community() {
                                         </div>
                                     </div>
                                     <div className='block md:hidden lg:hidden'>
-                                        <button className="btn text-[12.3px] flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[2.7rem] justify-center rounded-[6px]">
+                                        <button onClick={()=>window.location.href='https://twitter.com/codemarch'} className="btn text-[12.3px] flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[2.7rem] justify-center rounded-[6px]">
                                             View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>60,000+ Followers</span>
                                         </button>
                                     </div>

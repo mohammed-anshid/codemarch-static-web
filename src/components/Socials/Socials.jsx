@@ -4,6 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { PiDotOutlineFill } from 'react-icons/pi';
 
 const Socials = () => {
+    
   return (
     <>
         <div className="pt-24 md:pt-10 lg:pb-16 px-3 md:px-16">
@@ -40,13 +41,13 @@ const Socials = () => {
                                                 Join our active Discord community for coding discussions, expert help, and exclusive events. Connect with fellow learners, participate in challenges, and grow in a supportive network.
                                             </p>
                                             <div className='social-buttons mx-1 hidden lg:block'>
-                                                <button className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
+                                                <button onClick={()=>window.location.href='https://discord.gg/7g9WddcyKt'} className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
                                                     Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>2,000+ Members</span>
                                                 </button>
                                             </div>
                                         </div>
                                     </div> 
-                                    <button className="btn lg:hidden secondaryButton flex items-center mt-6 font-semibold sm:mx-5 bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full text-sm md:text-[16px] h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
+                                    <button onClick={()=>window.location.href='https://discord.gg/7g9WddcyKt'} className="btn lg:hidden secondaryButton flex items-center mt-6 font-semibold sm:mx-5 bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full text-sm md:text-[16px] h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
                                         Join Community<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium text-sm lg:text-base'>2,000+ Members</span>
                                     </button>
                                 </div>
@@ -63,18 +64,18 @@ const Socials = () => {
                                             </div>
                                         </span>
                                         <div className="col-span-8">
-                                            <h2 className=" head text-[1.3rem] md:text-3xl md:text-[3rem] lg:text-[2.6rem] leading-[35px] md:leading-[50px] text-secondaryHover lg:whitespace-nowrap">codemarch community</h2>
+                                            <h2 className=" head text-[1.3rem] md:text-3xl md:text-[3rem] lg:text-[2.6rem] leading-[35px] md:leading-[50px] text-secondaryHover lg:whitespace-nowrap">codemarch on Twitter</h2>
                                             <p className="leading-5 lg:leading-10 mt-2 lg:mt-8  lg:mx-[3.9px] sm:mt-1 block text-[11px] md:text-base text-secondaryText">
                                                 Follow us on twitter for industry news, success stories, and real-time communication with our team. Engage with our tweets for discussions on technology, innovation, and learning.
                                             </p>
                                             <div className='social-buttons mx-1 hidden lg:block'>
-                                                <button className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
+                                                <button onClick={()=>window.location.href='https://twitter.com/codemarch'} className="btn secondaryButton flex items-center mt-6 font-semibold bg-gradient-to-b from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
                                                     View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium'>60,000+ Followers</span>
                                                 </button>
                                             </div>
                                         </div>
                                     </div> 
-                                    <button className="btn lg:hidden secondaryButton flex items-center mt-6 font-semibold sm:mx-5 bg-gradient-to-b  from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full text-sm md:text-[16px] h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
+                                    <button onClick={()=>window.location.href='https://twitter.com/codemarch'} className="btn lg:hidden secondaryButton flex items-center mt-6 font-semibold sm:mx-5 bg-gradient-to-b  from-[#EDF1E4] via-[#EDF1E4] to-[#D7CEA5] w-full text-sm md:text-[16px] h-[2.3rem] md:h-[3.2rem] justify-center rounded-[6px]">
                                         View on Twitter<span className="ml-1 text-xs"><FaArrowRight/></span><PiDotOutlineFill/><span className='font-medium text-sm lg:text-base'>60,000+ Followers</span>
                                     </button>
                                 </div>
