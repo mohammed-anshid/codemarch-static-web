@@ -3,6 +3,7 @@ import './codecampsList.css';
 import { useNavigate } from 'react-router-dom';
 
 import { codecamps } from '..';
+import { FaArrowRight } from 'react-icons/fa';
 
 const CodecampsList = () => {
 
@@ -24,6 +25,9 @@ const CodecampsList = () => {
                             {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                             <br className="hidden sm:block md:hidden lg:block"/>
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  */}
+                            Empowering your journey, transforming your career. At codemarch, 
+                            <br className="hidden sm:block md:hidden lg:block"/>
+                            we're committed to unlocking your full potential in the tech world, everywhere you are.
                         </p>
                     </div>
                 </div>
@@ -57,12 +61,13 @@ const CodecampsList = () => {
                                                 <div className="samllbox"></div>
                                                 <div className="samllbox"></div>
                                                 <div className="samllbox"></div>              
-                                               
+                                                
                                             </div>
                                             <div className="flex justify-between">
                                                 <h4 className="textStyle ml-5  w-20"></h4>
                                                 <h4 className="textStyle ml-2  w-20"></h4>
                                             </div>
+                                            
                                         </div>
                                   
                                 </div>
