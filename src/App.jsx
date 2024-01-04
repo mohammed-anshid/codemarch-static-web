@@ -24,11 +24,11 @@ function App() {
     <div className="App">
       <Routes>
 
-        {/* <Route path='/dashboard/*' element={
+        <Route path='/dashboard/*' element={
           <Suspense fallback={<Loader />}>
             <Dashboard/>
           </Suspense>
-        }/> */}
+        }/>
 
         <Route path='/codecamps' element={
           <Suspense fallback={<Loader />}>
